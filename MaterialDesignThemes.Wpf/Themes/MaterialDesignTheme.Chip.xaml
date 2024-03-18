@@ -89,6 +89,7 @@
     <Setter Property="HorizontalAlignment" Value="Left" />
     <Setter Property="IconBackground" Value="{DynamicResource MaterialDesign.Brush.Primary}" />
     <Setter Property="IconForeground" Value="{DynamicResource MaterialDesign.Brush.Primary.Foreground}" />
+    <Setter Property="DeleteBackground" Value="#FFA6A6A6" />
     <Setter Property="Margin" Value="4" />
     <Setter Property="Template">
       <Setter.Value>
@@ -151,7 +152,7 @@
                 <ControlTemplate>
                   <Grid>
                     <Ellipse x:Name="Bg"
-                             Fill="#FFA6A6A6"
+                             Fill="{TemplateBinding Background}"
                              Stroke="#FF009587"
                              StrokeThickness="0" />
                     <iconPacks:PackIconMaterial Width="12"

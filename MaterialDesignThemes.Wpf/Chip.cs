@@ -88,6 +88,16 @@ public class Chip : ButtonBase
         = DependencyProperty.Register(nameof(DeleteToolTip), typeof(object), typeof(Chip), new PropertyMetadata(default(object?)));
     #endregion
 
+    #region DependencyProperty : DeleteBackgroundProperty
+    public Brush? DeleteBackground
+    {
+        get => (Brush?)GetValue(DeleteBackgroundProperty);
+        set => SetValue(DeleteBackgroundProperty, value);
+    }
+    public static readonly DependencyProperty DeleteBackgroundProperty
+        = DependencyProperty.Register(nameof(DeleteBackground), typeof(Brush), typeof(Chip), new PropertyMetadata(default(Brush?)));
+    #endregion
+
     #region Event : DeleteClickEvent
     [Category("Behavior")]
 
