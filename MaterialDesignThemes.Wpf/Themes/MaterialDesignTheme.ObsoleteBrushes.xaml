@@ -55,6 +55,7 @@
   <colors:StaticResource x:Key="MaterialDesignSnackbarRipple" ResourceKey="MaterialDesign.Brush.Button.Ripple" />
   <colors:StaticResource x:Key="MaterialDesignBackground" ResourceKey="MaterialDesign.Brush.Card.Background" />
   <colors:StaticResource x:Key="MaterialDesignCardBackground" ResourceKey="MaterialDesign.Brush.Card.Background" />
+  <colors:StaticResource x:Key="MaterialDesignPopupBoxBackground" ResourceKey="MaterialDesign.Brush.PopupBox.Background" />
   <colors:StaticResource x:Key="MaterialDesignCheckBoxDisabled" ResourceKey="MaterialDesign.Brush.CheckBox.Disabled" />
   <colors:StaticResource x:Key="MaterialDesignChipBackground" ResourceKey="MaterialDesign.Brush.Chip.Background" />
   <colors:StaticResource x:Key="MaterialDesignDataGridRowHoverBackground" ResourceKey="MaterialDesign.Brush.DataGrid.RowHoverBackground" />
