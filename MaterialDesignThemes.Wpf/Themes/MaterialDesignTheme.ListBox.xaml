@@ -41,6 +41,7 @@
     <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" />
     <Setter Property="Padding" Value="14,6,14,6" />
     <Setter Property="SnapsToDevicePixels" Value="True" />
+    <Setter Property="wpf:RippleAssist.Feedback" Value="{Binding Foreground, RelativeSource={RelativeSource Self}, Converter={StaticResource BrushRoundConverter}}" />
     <Setter Property="Template">
       <Setter.Value>
         <ControlTemplate TargetType="{x:Type ListBoxItem}">
@@ -135,7 +136,6 @@
                           Content="{TemplateBinding Content}"
                           ContentTemplate="{TemplateBinding ContentTemplate}"
                           ContentTemplateSelector="{TemplateBinding ContentTemplateSelector}"
-                          Feedback="{TemplateBinding Foreground, Converter={StaticResource BrushRoundConverter}}"
                           Focusable="False"
                           Opacity=".56"
                           SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
@@ -250,6 +250,7 @@
     <Setter Property="wpf:ListBoxItemAssist.HoverBackground" Value="{Binding Foreground, RelativeSource={RelativeSource Self}, Converter={StaticResource BrushOpacityConverter}, ConverterParameter=0.1}" />
     <Setter Property="wpf:ListBoxItemAssist.SelectedFocusedBackground" Value="{Binding Foreground, RelativeSource={RelativeSource Self}, Converter={StaticResource BrushOpacityConverter}, ConverterParameter=0.18}" />
     <Setter Property="wpf:ListBoxItemAssist.SelectedUnfocusedBackground" Value="{Binding Foreground, RelativeSource={RelativeSource Self}, Converter={StaticResource BrushOpacityConverter}, ConverterParameter=0.09}" />
+    <Setter Property="wpf:RippleAssist.Feedback" Value="{Binding Foreground, RelativeSource={RelativeSource Self}, Converter={StaticResource BrushRoundConverter}}" />
     <Setter Property="Template">
       <Setter.Value>
         <ControlTemplate TargetType="{x:Type ListBoxItem}">
@@ -319,7 +320,6 @@
                           Content="{TemplateBinding Content}"
                           ContentTemplate="{TemplateBinding ContentTemplate}"
                           ContentTemplateSelector="{TemplateBinding ContentTemplateSelector}"
-                          Feedback="{TemplateBinding Foreground, Converter={StaticResource BrushRoundConverter}}"
                           Focusable="False"
                           RecognizesAccessKey="False"
                           SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
