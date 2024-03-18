@@ -195,7 +195,13 @@
                   Feedback="{TemplateBinding Foreground, Converter={StaticResource BrushRoundConverter}}"
                   Focusable="False"
                   RecognizesAccessKey="False"
-                  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}">
+        <wpf:Ripple.Resources>
+          <DataTemplate DataType="{x:Type system:String}">
+            <TextBlock Text="{Binding}" />
+          </DataTemplate>
+        </wpf:Ripple.Resources>
+      </wpf:Ripple>
     </Grid>
     <ControlTemplate.Triggers>
       <Trigger Property="IsEnabled" Value="False">
