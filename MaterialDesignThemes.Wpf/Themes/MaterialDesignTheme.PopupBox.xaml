@@ -93,6 +93,7 @@
     <Setter Property="PopupHorizontalOffset" Value="0" />
     <Setter Property="PopupUniformCornerRadius" Value="2" />
     <Setter Property="PopupVerticalOffset" Value="0" />
+    <Setter Property="Background" Value="{DynamicResource MaterialDesign.Brush.Card.Background}" />
     <Setter Property="BorderThickness" Value="0" />
     <Setter Property="Template">
       <Setter.Value>
@@ -161,6 +162,7 @@
                         wpf:ElevationAssist.Elevation="{TemplateBinding PopupElevation}"
                         Content="{TemplateBinding PopupContent}"
                         ContentTemplate="{TemplateBinding PopupContentTemplate}"
+                        Background="{TemplateBinding Background}"
                         Foreground="{DynamicResource MaterialDesign.Brush.Foreground}"
                         RenderOptions.ClearTypeHint="Enabled"
                         UniformCornerRadius="{TemplateBinding PopupUniformCornerRadius}">
