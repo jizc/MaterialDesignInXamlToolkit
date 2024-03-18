@@ -1,5 +1,6 @@
 using System.Collections.ObjectModel;
 using System.Globalization;
+using System.Reflection.Metadata;
 using System.Windows.Data;
 using System.Windows.Media;
 
@@ -30,11 +31,20 @@ public class RatingBar : Control
 
     private void SelectItemHandler(object sender, ExecutedRoutedEventArgs executedRoutedEventArgs)
     {
-        if (executedRoutedEventArgs.Parameter is int value && !IsReadOnly)
+        if (executedRoutedEventArgs.Parameter is int parameter && !IsReadOnly)
         {
             if (!IsFractionalValueEnabled)
             {
-                Value = value;
+                int value = (int)Value;
+                if (value == parameter && AllowDeselect)
+                {
+                    Value = 0;
+                }
+                else
+                {
+                    Value = parameter;
+                }
+
                 return;
             }
             Value = GetValueAtMousePosition((RatingBarButton)executedRoutedEventArgs.OriginalSource);
@@ -291,6 +301,15 @@ public class RatingBar : Control
     {
         get => (bool)GetValue(IsReadOnlyProperty);
         set => SetValue(IsReadOnlyProperty, value);
+    }
+
+    public static readonly DependencyProperty AllowDeselectProperty = DependencyProperty.Register(
+        nameof(AllowDeselect), typeof(bool), typeof(RatingBar), new PropertyMetadata(default(bool)));
+
+    public bool AllowDeselect
+    {
+        get => (bool)GetValue(AllowDeselectProperty);
+        set => SetValue(AllowDeselectProperty, value);
     }
 
     public static readonly DependencyProperty InvertDirectionProperty = DependencyProperty.Register(
