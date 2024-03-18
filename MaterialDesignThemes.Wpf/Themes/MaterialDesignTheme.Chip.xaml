@@ -146,6 +146,7 @@
                     Height="16"
                     Margin="-6,0,8,0"
                     VerticalAlignment="Center"
+                    Background="{TemplateBinding DeleteBackground}"
                     ToolTip="{TemplateBinding DeleteToolTip}"
                     Visibility="{TemplateBinding IsDeletable, Converter={StaticResource BooleanToVisibilityConverter}}">
               <Button.Template>
