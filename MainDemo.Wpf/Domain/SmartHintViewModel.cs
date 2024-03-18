@@ -1,12 +1,10 @@
-﻿using System.Windows.Media;
-using MaterialDesignThemes.Wpf;
+﻿using MaterialDesignThemes.Wpf;
 
 namespace MaterialDesignDemo.Domain;
 
 internal class SmartHintViewModel : ViewModelBase
 {
     public static Point DefaultFloatingOffset { get; } = new(0, -16);
-    public static FontFamily DefaultFontFamily = (FontFamily)new MaterialDesignFontExtension().ProvideValue(null!);
 
     private bool _floatHint = true;
     private FloatingHintHorizontalAlignment _selectedAlignment = FloatingHintHorizontalAlignment.Inherit;
@@ -26,7 +24,6 @@ internal class SmartHintViewModel : ViewModelBase
     private string? _prefixText;
     private string? _suffixText;
     private double _selectedFontSize = double.NaN;
-    private FontFamily? _selectedFontFamily = DefaultFontFamily;
     private bool _controlsEnabled = true;
     private bool _rippleOnFocus = false;
     private bool _textBoxAcceptsReturn = false;
@@ -41,7 +38,6 @@ internal class SmartHintViewModel : ViewModelBase
     public IEnumerable<VerticalAlignment> VerticalAlignmentOptions { get; } = (VerticalAlignment[])Enum.GetValues(typeof(VerticalAlignment));
     public IEnumerable<double> IconSizeOptions { get; } = new[] { 10.0, 15, 20, 30, 50, 75 };
     public IEnumerable<double> FontSizeOptions { get; } = new[] { double.NaN, 8, 12, 16, 20, 24, 28 };
-    public IEnumerable<FontFamily> FontFamilyOptions { get; } = new FontFamily[] { DefaultFontFamily }.Concat(Fonts.SystemFontFamilies.OrderBy(f => f.Source));
 
     public bool FloatHint
     {
@@ -149,12 +145,6 @@ internal class SmartHintViewModel : ViewModelBase
     {
         get => _selectedFontSize;
         set => SetProperty(ref _selectedFontSize, value);
-    }
-
-    public FontFamily? SelectedFontFamily
-    {
-        get => _selectedFontFamily;
-        set => SetProperty(ref _selectedFontFamily, value);
     }
 
     public bool ControlsEnabled

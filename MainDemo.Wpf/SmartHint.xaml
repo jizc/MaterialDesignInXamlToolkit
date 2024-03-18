@@ -35,8 +35,8 @@
         <Setter Property="Margin" Value="0,10,0,0" />
         <Setter Property="VerticalAlignment" Value="Center" />
       </Style>
-      <iconPacks:PackIconMaterial x:Key="LeadingIcon" Kind="Github" />
-      <iconPacks:PackIconMaterial x:Key="TrailingIcon" Kind="Mushroom" />
+      <iconPacks:PackIconMaterialKind x:Key="LeadingIcon">Github</iconPacks:PackIconMaterialKind>
+      <iconPacks:PackIconMaterialKind x:Key="TrailingIcon">Mushroom</iconPacks:PackIconMaterialKind>
 
       <local:DoubleOptionToStringConverter x:Key="DoubleOptionToStringConverter" DefaultValue="{x:Static system:Double.NaN}" />
       <DataTemplate x:Key="CustomHeightTemplate" DataType="{x:Type system:Double}">
@@ -56,10 +56,6 @@
       </DataTemplate>
 
       <local:FontSizeConverter x:Key="FontSizeConverter" />
-      <local:FontFamilyOptionToStringConverter x:Key="FontFamilyOptionToStringConverter" DefaultValue="{x:Static domain:SmartHintViewModel.DefaultFontFamily}" />
-      <DataTemplate x:Key="FontFamilyTemplate">
-        <TextBlock Text="{Binding Converter={StaticResource FontFamilyOptionToStringConverter}}" />
-      </DataTemplate>
     </Grid.Resources>
 
     <Grid.RowDefinitions>
@@ -107,14 +103,6 @@
                     Content="HasErrors"
                     IsChecked="False"
                     Unchecked="HasErrors_OnToggled" />
-          <TextBlock Margin="20,0,0,0"
-                     VerticalAlignment="Center"
-                     Text="FontFamily:" />
-          <ComboBox Margin="5,0,0,0"
-                    VerticalAlignment="Center"
-                    ItemTemplate="{StaticResource FontFamilyTemplate}"
-                    ItemsSource="{Binding FontFamilyOptions}"
-                    SelectedItem="{Binding SelectedFontFamily, Mode=TwoWay}" />
         </StackPanel>
 
         <StackPanel Margin="10" Orientation="Horizontal">
@@ -317,7 +305,7 @@
               </Setter>
               <Setter Property="Text" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
               <Setter Property="VerticalContentAlignment" Value="{Binding SelectedVerticalAlignment}" />
-              <Setter Property="materialDesign:HintAssist.FontFamily" Value="{Binding SelectedFontFamily}" />
+              <Setter Property="materialDesign:HintAssist.FontFamily" Value="Segoe UI" />
               <Setter Property="materialDesign:HintAssist.IsFloating" Value="{Binding FloatHint}" />
               <Setter Property="materialDesign:TextFieldAssist.HasClearButton" Value="{Binding ShowClearButton}" />
               <Setter Property="materialDesign:TextFieldAssist.HasLeadingIcon" Value="{Binding ShowLeadingIcon}" />
@@ -371,7 +359,7 @@
               </Setter>
               <Setter Property="Text" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
               <Setter Property="VerticalContentAlignment" Value="{Binding SelectedVerticalAlignment}" />
-              <Setter Property="materialDesign:HintAssist.FontFamily" Value="{Binding SelectedFontFamily}" />
+              <Setter Property="materialDesign:HintAssist.FontFamily" Value="Segoe UI" />
               <Setter Property="materialDesign:HintAssist.IsFloating" Value="{Binding FloatHint}" />
               <Setter Property="materialDesign:TextFieldAssist.HasClearButton" Value="{Binding ShowClearButton}" />
               <Setter Property="materialDesign:TextFieldAssist.HasLeadingIcon" Value="{Binding ShowLeadingIcon}" />
@@ -425,7 +413,7 @@
               </Setter>
               <Setter Property="Text" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
               <Setter Property="VerticalContentAlignment" Value="{Binding SelectedVerticalAlignment}" />
-              <Setter Property="materialDesign:HintAssist.FontFamily" Value="{Binding SelectedFontFamily}" />
+              <Setter Property="materialDesign:HintAssist.FontFamily" Value="Segoe UI" />
               <Setter Property="materialDesign:HintAssist.IsFloating" Value="{Binding FloatHint}" />
               <Setter Property="materialDesign:TextFieldAssist.HasClearButton" Value="{Binding ShowClearButton}" />
               <Setter Property="materialDesign:TextFieldAssist.HasLeadingIcon" Value="{Binding ShowLeadingIcon}" />
@@ -487,7 +475,7 @@
               </Setter>
               <Setter Property="VerticalContentAlignment" Value="{Binding SelectedVerticalAlignment}" />
               <Setter Property="local:SmartHint.RichTextBoxText" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
-              <Setter Property="materialDesign:HintAssist.FontFamily" Value="{Binding SelectedFontFamily}" />
+              <Setter Property="materialDesign:HintAssist.FontFamily" Value="Segoe UI" />
               <Setter Property="materialDesign:HintAssist.IsFloating" Value="{Binding FloatHint}" />
               <Setter Property="materialDesign:TextFieldAssist.HasClearButton" Value="{Binding ShowClearButton}" />
               <Setter Property="materialDesign:TextFieldAssist.HasLeadingIcon" Value="{Binding ShowLeadingIcon}" />
@@ -543,7 +531,7 @@
                 </Setter.Value>
               </Setter>
               <Setter Property="VerticalContentAlignment" Value="{Binding SelectedVerticalAlignment}" />
-              <Setter Property="materialDesign:HintAssist.FontFamily" Value="{Binding SelectedFontFamily}" />
+              <Setter Property="materialDesign:HintAssist.FontFamily" Value="Segoe UI" />
               <Setter Property="materialDesign:HintAssist.IsFloating" Value="{Binding FloatHint}" />
               <Setter Property="materialDesign:PasswordBoxAssist.Password" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
               <Setter Property="materialDesign:TextFieldAssist.HasClearButton" Value="{Binding ShowClearButton}" />
@@ -597,7 +585,7 @@
                 </Setter.Value>
               </Setter>
               <Setter Property="VerticalContentAlignment" Value="{Binding SelectedVerticalAlignment}" />
-              <Setter Property="materialDesign:HintAssist.FontFamily" Value="{Binding SelectedFontFamily}" />
+              <Setter Property="materialDesign:HintAssist.FontFamily" Value="Segoe UI" />
               <Setter Property="materialDesign:HintAssist.IsFloating" Value="{Binding FloatHint}" />
               <Setter Property="materialDesign:PasswordBoxAssist.Password" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
               <Setter Property="materialDesign:TextFieldAssist.HasClearButton" Value="{Binding ShowClearButton}" />
@@ -651,7 +639,7 @@
                 </Setter.Value>
               </Setter>
               <Setter Property="VerticalContentAlignment" Value="{Binding SelectedVerticalAlignment}" />
-              <Setter Property="materialDesign:HintAssist.FontFamily" Value="{Binding SelectedFontFamily}" />
+              <Setter Property="materialDesign:HintAssist.FontFamily" Value="Segoe UI" />
               <Setter Property="materialDesign:HintAssist.IsFloating" Value="{Binding FloatHint}" />
               <Setter Property="materialDesign:PasswordBoxAssist.Password" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
               <Setter Property="materialDesign:TextFieldAssist.HasClearButton" Value="{Binding ShowClearButton}" />
@@ -714,7 +702,7 @@
                 </Setter.Value>
               </Setter>
               <Setter Property="VerticalContentAlignment" Value="{Binding SelectedVerticalAlignment}" />
-              <Setter Property="materialDesign:HintAssist.FontFamily" Value="{Binding SelectedFontFamily}" />
+              <Setter Property="materialDesign:HintAssist.FontFamily" Value="Segoe UI" />
               <Setter Property="materialDesign:HintAssist.IsFloating" Value="{Binding FloatHint}" />
               <Setter Property="materialDesign:PasswordBoxAssist.IsPasswordRevealed" Value="{Binding ElementName=PasswordBoxesRevealedCheckBox, Path=IsChecked}" />
               <Setter Property="materialDesign:PasswordBoxAssist.Password" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
@@ -769,7 +757,7 @@
                 </Setter.Value>
               </Setter>
               <Setter Property="VerticalContentAlignment" Value="{Binding SelectedVerticalAlignment}" />
-              <Setter Property="materialDesign:HintAssist.FontFamily" Value="{Binding SelectedFontFamily}" />
+              <Setter Property="materialDesign:HintAssist.FontFamily" Value="Segoe UI" />
               <Setter Property="materialDesign:HintAssist.IsFloating" Value="{Binding FloatHint}" />
               <Setter Property="materialDesign:PasswordBoxAssist.IsPasswordRevealed" Value="{Binding ElementName=PasswordBoxesRevealedCheckBox, Path=IsChecked}" />
               <Setter Property="materialDesign:PasswordBoxAssist.Password" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
@@ -824,7 +812,7 @@
                 </Setter.Value>
               </Setter>
               <Setter Property="VerticalContentAlignment" Value="{Binding SelectedVerticalAlignment}" />
-              <Setter Property="materialDesign:HintAssist.FontFamily" Value="{Binding SelectedFontFamily}" />
+              <Setter Property="materialDesign:HintAssist.FontFamily" Value="Segoe UI" />
               <Setter Property="materialDesign:HintAssist.IsFloating" Value="{Binding FloatHint}" />
               <Setter Property="materialDesign:PasswordBoxAssist.IsPasswordRevealed" Value="{Binding ElementName=PasswordBoxesRevealedCheckBox, Path=IsChecked}" />
               <Setter Property="materialDesign:PasswordBoxAssist.Password" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
@@ -890,7 +878,7 @@
               </Setter>
               <Setter Property="Text" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
               <Setter Property="VerticalContentAlignment" Value="{Binding SelectedVerticalAlignment}" />
-              <Setter Property="materialDesign:HintAssist.FontFamily" Value="{Binding SelectedFontFamily}" />
+              <Setter Property="materialDesign:HintAssist.FontFamily" Value="Segoe UI" />
               <Setter Property="materialDesign:HintAssist.IsFloating" Value="{Binding FloatHint}" />
               <Setter Property="materialDesign:TextFieldAssist.HasClearButton" Value="{Binding ShowClearButton}" />
               <Setter Property="materialDesign:TextFieldAssist.HasLeadingIcon" Value="{Binding ShowLeadingIcon}" />
@@ -944,7 +932,7 @@
               </Setter>
               <Setter Property="Text" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
               <Setter Property="VerticalContentAlignment" Value="{Binding SelectedVerticalAlignment}" />
-              <Setter Property="materialDesign:HintAssist.FontFamily" Value="{Binding SelectedFontFamily}" />
+              <Setter Property="materialDesign:HintAssist.FontFamily" Value="Segoe UI" />
               <Setter Property="materialDesign:HintAssist.IsFloating" Value="{Binding FloatHint}" />
               <Setter Property="materialDesign:TextFieldAssist.HasClearButton" Value="{Binding ShowClearButton}" />
               <Setter Property="materialDesign:TextFieldAssist.HasLeadingIcon" Value="{Binding ShowLeadingIcon}" />
@@ -998,7 +986,7 @@
               </Setter>
               <Setter Property="Text" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
               <Setter Property="VerticalContentAlignment" Value="{Binding SelectedVerticalAlignment}" />
-              <Setter Property="materialDesign:HintAssist.FontFamily" Value="{Binding SelectedFontFamily}" />
+              <Setter Property="materialDesign:HintAssist.FontFamily" Value="Segoe UI" />
               <Setter Property="materialDesign:HintAssist.IsFloating" Value="{Binding FloatHint}" />
               <Setter Property="materialDesign:TextFieldAssist.HasClearButton" Value="{Binding ShowClearButton}" />
               <Setter Property="materialDesign:TextFieldAssist.HasLeadingIcon" Value="{Binding ShowLeadingIcon}" />
@@ -1055,7 +1043,7 @@
               </Setter>
               <Setter Property="Text" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
               <Setter Property="VerticalContentAlignment" Value="{Binding SelectedVerticalAlignment}" />
-              <Setter Property="materialDesign:HintAssist.FontFamily" Value="{Binding SelectedFontFamily}" />
+              <Setter Property="materialDesign:HintAssist.FontFamily" Value="Segoe UI" />
               <Setter Property="materialDesign:HintAssist.IsFloating" Value="{Binding FloatHint}" />
               <Setter Property="materialDesign:TextFieldAssist.HasLeadingIcon" Value="{Binding ShowLeadingIcon}" />
               <Setter Property="materialDesign:TextFieldAssist.HasTrailingIcon" Value="{Binding ShowTrailingIcon}" />
@@ -1106,7 +1094,7 @@
               </Setter>
               <Setter Property="Text" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
               <Setter Property="VerticalContentAlignment" Value="{Binding SelectedVerticalAlignment}" />
-              <Setter Property="materialDesign:HintAssist.FontFamily" Value="{Binding SelectedFontFamily}" />
+              <Setter Property="materialDesign:HintAssist.FontFamily" Value="Segoe UI" />
               <Setter Property="materialDesign:HintAssist.IsFloating" Value="{Binding FloatHint}" />
               <Setter Property="materialDesign:TextFieldAssist.HasLeadingIcon" Value="{Binding ShowLeadingIcon}" />
               <Setter Property="materialDesign:TextFieldAssist.HasTrailingIcon" Value="{Binding ShowTrailingIcon}" />
@@ -1157,7 +1145,7 @@
               </Setter>
               <Setter Property="Text" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
               <Setter Property="VerticalContentAlignment" Value="{Binding SelectedVerticalAlignment}" />
-              <Setter Property="materialDesign:HintAssist.FontFamily" Value="{Binding SelectedFontFamily}" />
+              <Setter Property="materialDesign:HintAssist.FontFamily" Value="Segoe UI" />
               <Setter Property="materialDesign:HintAssist.IsFloating" Value="{Binding FloatHint}" />
               <Setter Property="materialDesign:TextFieldAssist.HasLeadingIcon" Value="{Binding ShowLeadingIcon}" />
               <Setter Property="materialDesign:TextFieldAssist.HasTrailingIcon" Value="{Binding ShowTrailingIcon}" />
@@ -1213,7 +1201,7 @@
               </Setter>
               <Setter Property="Text" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
               <Setter Property="VerticalContentAlignment" Value="{Binding SelectedVerticalAlignment}" />
-              <Setter Property="materialDesign:HintAssist.FontFamily" Value="{Binding SelectedFontFamily}" />
+              <Setter Property="materialDesign:HintAssist.FontFamily" Value="Segoe UI" />
               <Setter Property="materialDesign:HintAssist.IsFloating" Value="{Binding FloatHint}" />
               <Setter Property="materialDesign:TextFieldAssist.HasLeadingIcon" Value="{Binding ShowLeadingIcon}" />
               <Setter Property="materialDesign:TextFieldAssist.HasTrailingIcon" Value="{Binding ShowTrailingIcon}" />
@@ -1264,7 +1252,7 @@
               </Setter>
               <Setter Property="Text" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
               <Setter Property="VerticalContentAlignment" Value="{Binding SelectedVerticalAlignment}" />
-              <Setter Property="materialDesign:HintAssist.FontFamily" Value="{Binding SelectedFontFamily}" />
+              <Setter Property="materialDesign:HintAssist.FontFamily" Value="Segoe UI" />
               <Setter Property="materialDesign:HintAssist.IsFloating" Value="{Binding FloatHint}" />
               <Setter Property="materialDesign:TextFieldAssist.HasLeadingIcon" Value="{Binding ShowLeadingIcon}" />
               <Setter Property="materialDesign:TextFieldAssist.HasTrailingIcon" Value="{Binding ShowTrailingIcon}" />
@@ -1315,7 +1303,7 @@
               </Setter>
               <Setter Property="Text" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" />
               <Setter Property="VerticalContentAlignment" Value="{Binding SelectedVerticalAlignment}" />
-              <Setter Property="materialDesign:HintAssist.FontFamily" Value="{Binding SelectedFontFamily}" />
+              <Setter Property="materialDesign:HintAssist.FontFamily" Value="Segoe UI" />
               <Setter Property="materialDesign:HintAssist.IsFloating" Value="{Binding FloatHint}" />
               <Setter Property="materialDesign:TextFieldAssist.HasLeadingIcon" Value="{Binding ShowLeadingIcon}" />
               <Setter Property="materialDesign:TextFieldAssist.HasTrailingIcon" Value="{Binding ShowTrailingIcon}" />

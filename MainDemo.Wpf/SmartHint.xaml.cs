@@ -132,8 +132,3 @@ internal class PointOptionToStringConverter : OptionToStringConverter<Point>
 {
     protected override string ToString(Point value, CultureInfo culture) => value.ToString(culture);
 }
-
-internal class FontFamilyOptionToStringConverter : OptionToStringConverter<FontFamily>
-{
-    protected override string ToString(FontFamily value, CultureInfo culture) => value.Source.ToString(culture);
-}
