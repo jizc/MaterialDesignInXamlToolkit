@@ -91,7 +91,7 @@
     <Setter Property="Padding" Value="0,8,0,8" />
     <Setter Property="PopupElevation" Value="Dp6" />
     <Setter Property="PopupHorizontalOffset" Value="0" />
-    <Setter Property="PopupUniformCornerRadius" Value="2" />
+    <Setter Property="PopupUniformCornerRadius" Value="4" />
     <Setter Property="PopupVerticalOffset" Value="0" />
     <Setter Property="Background" Value="{DynamicResource MaterialDesign.Brush.Card.Background}" />
     <Setter Property="BorderThickness" Value="0" />
