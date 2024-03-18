@@ -371,7 +371,7 @@
                          MinWidth="10"
                          HorizontalAlignment="Stretch"
                          HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
-                         CaretBrush="{TemplateBinding Foreground}"
+                         CaretBrush="{DynamicResource MaterialDesign.Brush.Primary}"
                          IsReadOnly="{TemplateBinding IsReadOnly}"
                          MaxLength="{Binding Path=(wpf:ComboBoxAssist.MaxLength), RelativeSource={RelativeSource Mode=TemplatedParent}}"
                          Style="{StaticResource MaterialDesignComboBoxEditableTextBox}"
