@@ -77,7 +77,7 @@
   <iconPacks:PackIconMaterial x:Key="MaterialDesignPopupBoxToggleContent"
                 Width="24"
                 Height="24"
-                Margin="4,0,4,0"
+                Margin="4"
                 x:Shared="False"
                 Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=wpf:PopupBox}, Path=Foreground}"
                 Kind="DotsVertical" />
@@ -104,6 +104,7 @@
 
             <Style TargetType="Separator" BasedOn="{StaticResource MaterialDesignSeparator}" />
             <Style x:Key="ToggleButtonStyle" TargetType="ToggleButton">
+              <Setter Property="Padding" Value="0" />
               <Setter Property="Template">
                 <Setter.Value>
                   <ControlTemplate TargetType="ToggleButton">
