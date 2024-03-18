@@ -5,6 +5,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:smtx="clr-namespace:ShowMeTheXAML;assembly=ShowMeTheXAML"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              d:DesignHeight="300"
              d:DesignWidth="300"
              mc:Ignorable="d">
@@ -20,12 +21,12 @@
           You can set the highlighted color with:
           materialDesign:MenuItemAssist.HighlightedBackground="Fuchsia"
           -->
-          <MenuItem Header="Save" Icon="{materialDesign:PackIcon Kind=ContentSave}" />
+          <MenuItem Header="Save" Icon="{iconPacks:Material Kind=ContentSave}" />
 
           <MenuItem Header="Save As.." />
 
           <MenuItem Header="Exit"
-                    Icon="{materialDesign:PackIcon Kind=ExitToApp}"
+                    Icon="{iconPacks:Material Kind=ExitToApp}"
                     InputGestureText="Ctrl+E" />
 
           <Separator />
@@ -50,15 +51,15 @@
         <MenuItem Header="_Edit">
           <MenuItem Command="Cut"
                     Header="_Cut"
-                    Icon="{materialDesign:PackIcon Kind=ContentCut}" />
+                    Icon="{iconPacks:Material Kind=ContentCut}" />
 
           <MenuItem Command="Copy"
                     Header="_Copy"
-                    Icon="{materialDesign:PackIcon Kind=ContentCopy}" />
+                    Icon="{iconPacks:Material Kind=ContentCopy}" />
 
           <MenuItem Command="Paste"
                     Header="_Paste"
-                    Icon="{materialDesign:PackIcon Kind=ContentPaste}" />
+                    Icon="{iconPacks:Material Kind=ContentPaste}" />
         </MenuItem>
       </Menu>
     </smtx:XamlDisplay>
@@ -141,7 +142,7 @@
                     HorizontalAlignment="Stretch" />
       <Grid Grid.Row="2">
         <StackPanel Orientation="Horizontal">
-          <materialDesign:PackIcon Margin="0,0,5,0" Kind="Information" />
+          <iconPacks:PackIconMaterial Margin="0,0,5,0" Kind="Information" />
           <TextBlock>The menu height matches with the parent panel height. Use the splitter to see the adaptive menu in action.</TextBlock>
         </StackPanel>
       </Grid>
@@ -191,27 +192,27 @@
       <ToolBarTray>
         <ToolBar ClipToBounds="False" Style="{StaticResource MaterialDesignToolBar}">
           <Button Click="TwitterButton_OnClick"
-                  Content="{materialDesign:PackIcon Kind=Twitter}"
+                  Content="{iconPacks:Material Kind=Twitter}"
                   ToolTip="Follow me on Twitter" />
 
-          <Button Content="{materialDesign:PackIcon Kind=ContentSave}" ToolTip="Save" />
+          <Button Content="{iconPacks:Material Kind=ContentSave}" ToolTip="Save" />
 
           <Separator />
 
           <Button Command="Cut"
-                  Content="{materialDesign:PackIcon Kind=ContentCut}"
+                  Content="{iconPacks:Material Kind=ContentCut}"
                   ToolBar.OverflowMode="AsNeeded"
                   ToolTip="Cut" />
 
           <Button Command="Copy"
-                  Content="{materialDesign:PackIcon Kind=ContentCopy}"
+                  Content="{iconPacks:Material Kind=ContentCopy}"
                   ToolBar.OverflowMode="AsNeeded"
                   ToolTip="Copy that stuff" />
 
           <Separator />
 
           <Button Command="Paste"
-                  Content="{materialDesign:PackIcon Kind=ContentPaste}"
+                  Content="{iconPacks:Material Kind=ContentPaste}"
                   ToolBar.OverflowMode="AsNeeded"
                   ToolTip="Paste some stuff" />
 
@@ -219,10 +220,10 @@
             when badging in a toolbar, make sure the parent ToolBar.ClipToBounds="False", and
             manually apply the button style
           -->
-          <materialDesign:Badged Badge="{materialDesign:PackIcon Alert}"
+          <materialDesign:Badged Badge="{iconPacks:Material Alert}"
                                  CornerRadius="5"
                                  ToolBar.OverflowMode="AsNeeded">
-            <Button Content="{materialDesign:PackIcon Kind=AirplaneTakeoff}"
+            <Button Content="{iconPacks:Material Kind=AirplaneTakeoff}"
                     Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"
                     ToolTip="Badge it up!" />
           </materialDesign:Badged>
@@ -246,10 +247,10 @@
               </StackPanel>
             </ListBox.ToolTip>
 
-            <ListBoxItem Content="{materialDesign:PackIcon Kind=FormatAlignLeft}" />
-            <ListBoxItem Content="{materialDesign:PackIcon Kind=FormatAlignCenter}" />
-            <ListBoxItem Content="{materialDesign:PackIcon Kind=FormatAlignRight}" />
-            <ListBoxItem Content="{materialDesign:PackIcon Kind=FormatAlignJustify}" />
+            <ListBoxItem Content="{iconPacks:Material Kind=FormatAlignLeft}" />
+            <ListBoxItem Content="{iconPacks:Material Kind=FormatAlignCenter}" />
+            <ListBoxItem Content="{iconPacks:Material Kind=FormatAlignRight}" />
+            <ListBoxItem Content="{iconPacks:Material Kind=FormatAlignJustify}" />
           </ListBox>
 
           <Separator />
@@ -263,9 +264,9 @@
               </StackPanel>
             </ListBox.ToolTip>
 
-            <ListBoxItem Content="{materialDesign:PackIcon Kind=FormatBold}" />
-            <ListBoxItem Content="{materialDesign:PackIcon Kind=FormatItalic}" />
-            <ListBoxItem Content="{materialDesign:PackIcon Kind=FormatUnderline}" />
+            <ListBoxItem Content="{iconPacks:Material Kind=FormatBold}" />
+            <ListBoxItem Content="{iconPacks:Material Kind=FormatItalic}" />
+            <ListBoxItem Content="{iconPacks:Material Kind=FormatUnderline}" />
           </ListBox>
 
           <Separator />
@@ -281,7 +282,7 @@
 
           <CheckBox Content="Check" />
 
-          <Button Content="{materialDesign:PackIcon Kind=Hotel}"
+          <Button Content="{iconPacks:Material Kind=Hotel}"
                   ToolBar.OverflowMode="Always"
                   ToolTip="Take a nap" />
 
@@ -291,11 +292,11 @@
 
           <Separator />
 
-          <RadioButton Content="{materialDesign:PackIcon Kind=Radio}"
+          <RadioButton Content="{iconPacks:Material Kind=Radio}"
                        GroupName="YYY"
                        Style="{StaticResource MaterialDesignToolRadioButton}" />
 
-          <RadioButton Content="{materialDesign:PackIcon Kind=EmoticonPoop}"
+          <RadioButton Content="{iconPacks:Material Kind=EmoticonPoop}"
                        GroupName="YYY"
                        Style="{StaticResource MaterialDesignToolRadioButton}" />
 

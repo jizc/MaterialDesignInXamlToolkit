@@ -8,6 +8,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:smtx="clr-namespace:ShowMeTheXAML;assembly=ShowMeTheXAML"
              xmlns:system="clr-namespace:System;assembly=mscorlib"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              d:DataContext="{d:DesignInstance domain:ButtonsViewModel}"
              d:DesignHeight="1200"
              d:DesignWidth="800"
@@ -63,7 +64,7 @@
             <Button IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                     Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}"
                     ToolTip="MaterialDesignFloatingActionMiniLightButton">
-              <materialDesign:PackIcon Width="{StaticResource IconSize}"
+              <iconPacks:PackIconMaterial Width="{StaticResource IconSize}"
                                        Height="{StaticResource IconSize}"
                                        Kind="Alarm" />
             </Button>
@@ -74,7 +75,7 @@
                     IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                     Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
                     ToolTip="MaterialDesignFloatingActionMiniButton">
-              <materialDesign:PackIcon Width="{StaticResource IconSize}"
+              <iconPacks:PackIconMaterial Width="{StaticResource IconSize}"
                                        Height="{StaticResource IconSize}"
                                        Kind="Alarm" />
             </Button>
@@ -84,7 +85,7 @@
             <Button IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                     Style="{StaticResource MaterialDesignFloatingActionMiniDarkButton}"
                     ToolTip="MaterialDesignFloatingActionMiniDarkButton">
-              <materialDesign:PackIcon Width="{StaticResource IconSize}"
+              <iconPacks:PackIconMaterial Width="{StaticResource IconSize}"
                                        Height="{StaticResource IconSize}"
                                        Kind="Alarm" />
             </Button>
@@ -94,7 +95,7 @@
             <Button IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                     Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryLightButton}"
                     ToolTip="MaterialDesignFloatingActionMiniSecondaryLightButton">
-              <materialDesign:PackIcon Width="{StaticResource IconSize}"
+              <iconPacks:PackIconMaterial Width="{StaticResource IconSize}"
                                        Height="{StaticResource IconSize}"
                                        Kind="Alarm" />
             </Button>
@@ -103,7 +104,7 @@
             <Button IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                     Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryButton}"
                     ToolTip="MaterialDesignFloatingActionMiniSecondaryButton">
-              <materialDesign:PackIcon Width="{StaticResource IconSize}"
+              <iconPacks:PackIconMaterial Width="{StaticResource IconSize}"
                                        Height="{StaticResource IconSize}"
                                        Kind="Alarm" />
             </Button>
@@ -112,7 +113,7 @@
             <Button IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                     Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryDarkButton}"
                     ToolTip="MaterialDesignFloatingActionMiniSecondaryDarkButton">
-              <materialDesign:PackIcon Width="{StaticResource IconSize}"
+              <iconPacks:PackIconMaterial Width="{StaticResource IconSize}"
                                        Height="{StaticResource IconSize}"
                                        Kind="Alarm" />
             </Button>
@@ -124,7 +125,7 @@
             <Button IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                     Style="{StaticResource MaterialDesignFloatingActionLightButton}"
                     ToolTip="MaterialDesignFloatingActionLightButton">
-              <materialDesign:PackIcon Width="{StaticResource IconSize}"
+              <iconPacks:PackIconMaterial Width="{StaticResource IconSize}"
                                        Height="{StaticResource IconSize}"
                                        Kind="Alarm" />
             </Button>
@@ -134,7 +135,7 @@
             <Button IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                     Style="{StaticResource MaterialDesignFloatingActionButton}"
                     ToolTip="MaterialDesignFloatingActionButton">
-              <materialDesign:PackIcon Width="{StaticResource IconSize}"
+              <iconPacks:PackIconMaterial Width="{StaticResource IconSize}"
                                        Height="{StaticResource IconSize}"
                                        Kind="Alarm" />
             </Button>
@@ -144,7 +145,7 @@
             <Button IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                     Style="{StaticResource MaterialDesignFloatingActionDarkButton}"
                     ToolTip="MaterialDesignFloatingActionDarkButton">
-              <materialDesign:PackIcon Width="{StaticResource IconSize}"
+              <iconPacks:PackIconMaterial Width="{StaticResource IconSize}"
                                        Height="{StaticResource IconSize}"
                                        Kind="Alarm" />
             </Button>
@@ -154,7 +155,7 @@
             <Button IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                     Style="{StaticResource MaterialDesignFloatingActionSecondaryLightButton}"
                     ToolTip="MaterialDesignFloatingActionSecondaryLightButton">
-              <materialDesign:PackIcon Width="{StaticResource IconSize}"
+              <iconPacks:PackIconMaterial Width="{StaticResource IconSize}"
                                        Height="{StaticResource IconSize}"
                                        Kind="Alarm" />
             </Button>
@@ -164,7 +165,7 @@
             <Button IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                     Style="{StaticResource MaterialDesignFloatingActionSecondaryButton}"
                     ToolTip="MaterialDesignFloatingActionSecondaryButton">
-              <materialDesign:PackIcon Width="{StaticResource IconSize}"
+              <iconPacks:PackIconMaterial Width="{StaticResource IconSize}"
                                        Height="{StaticResource IconSize}"
                                        Kind="Alarm" />
             </Button>
@@ -174,7 +175,7 @@
             <Button IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                     Style="{StaticResource MaterialDesignFloatingActionSecondaryDarkButton}"
                     ToolTip="MaterialDesignFloatingActionSecondaryDarkButton">
-              <materialDesign:PackIcon Width="{StaticResource IconSize}"
+              <iconPacks:PackIconMaterial Width="{StaticResource IconSize}"
                                        Height="{StaticResource IconSize}"
                                        Kind="Alarm" />
             </Button>
@@ -422,7 +423,7 @@
           </smtx:XamlDisplay>
 
           <smtx:XamlDisplay Margin="8,0" UniqueKey="buttons_17">
-            <materialDesign:Badged Badge="{materialDesign:PackIcon Heart}" BadgeColorZoneMode="SecondaryMid">
+            <materialDesign:Badged Badge="{iconPacks:Material Heart}" BadgeColorZoneMode="SecondaryMid">
               <Button Content="LOVE" IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" />
             </materialDesign:Badged>
           </smtx:XamlDisplay>
@@ -453,7 +454,7 @@
           </smtx:XamlDisplay>
 
           <smtx:XamlDisplay Margin="8,0" UniqueKey="buttons_20">
-            <Button Content="{materialDesign:PackIcon AirplaneTakeoff}"
+            <Button Content="{iconPacks:Material AirplaneTakeoff}"
                     IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                     ToolTip="Icon" />
           </smtx:XamlDisplay>
@@ -493,7 +494,7 @@
             <Button IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                     Style="{StaticResource MaterialDesignIconButton}"
                     ToolTip="MaterialDesignIconButton">
-              <materialDesign:PackIcon Kind="Play" />
+              <iconPacks:PackIconMaterial Kind="Play" />
             </Button>
           </smtx:XamlDisplay>
 
@@ -501,7 +502,7 @@
             <Button IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                     Style="{StaticResource MaterialDesignIconForegroundButton}"
                     ToolTip="MaterialDesignIconForegroundButton">
-              <materialDesign:PackIcon Kind="Play" />
+              <iconPacks:PackIconMaterial Kind="Play" />
             </Button>
           </smtx:XamlDisplay>
 
@@ -510,7 +511,7 @@
                     IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                     Style="{StaticResource MaterialDesignIconButton}"
                     ToolTip="MaterialDesignIconButton">
-              <materialDesign:PackIcon Kind="Play" />
+              <iconPacks:PackIconMaterial Kind="Play" />
             </Button>
           </smtx:XamlDisplay>
         </StackPanel>
@@ -608,7 +609,7 @@
                     Visibility="{Binding ShowDismissButton, Converter={StaticResource BooleanToVisibilityConverter}}">
               <StackPanel Orientation="Horizontal">
                 <TextBlock Text="DISMISS" />
-                <materialDesign:PackIcon Margin="4,.5,0,0" Kind="Close" />
+                <iconPacks:PackIconMaterial Margin="4,.5,0,0" Kind="Close" />
               </StackPanel>
             </Button>
 
@@ -642,7 +643,7 @@
                     Visibility="{Binding ShowDismissButton, Converter={StaticResource BooleanToVisibilityConverter}}">
               <StackPanel Orientation="Horizontal">
                 <TextBlock Text="DISMISS" />
-                <materialDesign:PackIcon Margin="4,.5,0,0" Kind="Close" />
+                <iconPacks:PackIconMaterial Margin="4,.5,0,0" Kind="Close" />
               </StackPanel>
             </Button>
 
@@ -676,7 +677,7 @@
                     Visibility="{Binding ShowDismissButton, Converter={StaticResource BooleanToVisibilityConverter}}">
               <StackPanel Orientation="Horizontal">
                 <TextBlock Text="DISMISS" />
-                <materialDesign:PackIcon Margin="4,.5,0,0" Kind="Close" />
+                <iconPacks:PackIconMaterial Margin="4,.5,0,0" Kind="Close" />
               </StackPanel>
             </Button>
 
@@ -714,9 +715,9 @@
                     IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                     Style="{StaticResource MaterialDesignFloatingActionLightButton}">
               <!-- simple example of toggling/animating pack icon with a data trigger -->
-              <materialDesign:PackIcon Width="24" Height="24">
-                <materialDesign:PackIcon.Style>
-                  <Style TargetType="materialDesign:PackIcon" BasedOn="{StaticResource {x:Type materialDesign:PackIcon}}">
+              <iconPacks:PackIconMaterial Width="24" Height="24">
+                <iconPacks:PackIconMaterial.Style>
+                  <Style TargetType="iconPacks:PackIconMaterial" BasedOn="{StaticResource {x:Type iconPacks:PackIconMaterial}}">
                     <Setter Property="Kind" Value="CloudSync" />
                     <Style.Triggers>
                       <DataTrigger Binding="{Binding IsSaveComplete}" Value="True">
@@ -734,8 +735,8 @@
                       </DataTrigger>
                     </Style.Triggers>
                   </Style>
-                </materialDesign:PackIcon.Style>
-              </materialDesign:PackIcon>
+                </iconPacks:PackIconMaterial.Style>
+              </iconPacks:PackIconMaterial>
             </Button>
           </StackPanel>
         </smtx:XamlDisplay>
@@ -750,7 +751,7 @@
           <Button materialDesign:ButtonProgressAssist.IsIndeterminate="True"
                   materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
                   materialDesign:ButtonProgressAssist.Value="-1"
-                  Content="{materialDesign:PackIcon DotsHorizontal}"
+                  Content="{iconPacks:Material DotsHorizontal}"
                   IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                   Style="{StaticResource MaterialDesignFloatingActionButton}" />
         </smtx:XamlDisplay>
@@ -758,7 +759,7 @@
         <smtx:XamlDisplay Margin="8,0" UniqueKey="buttons_30">
           <Button materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
                   materialDesign:ButtonProgressAssist.Value="50"
-                  Content="{materialDesign:PackIcon DotsHorizontal}"
+                  Content="{iconPacks:Material DotsHorizontal}"
                   IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                   Style="{StaticResource MaterialDesignFloatingActionSecondaryButton}" />
         </smtx:XamlDisplay>
@@ -770,7 +771,7 @@
                   materialDesign:ButtonProgressAssist.Value="25"
                   Background="#81d4fa"
                   BorderBrush="#81d4fa"
-                  Content="{materialDesign:PackIcon DotsHorizontal}"
+                  Content="{iconPacks:Material DotsHorizontal}"
                   Foreground="#DD000000"
                   IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                   Style="{StaticResource MaterialDesignFloatingActionButton}" />
@@ -779,7 +780,7 @@
         <smtx:XamlDisplay Margin="8,0" UniqueKey="buttons_32">
           <Button materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
                   materialDesign:ButtonProgressAssist.Value="75"
-                  Content="{materialDesign:PackIcon DotsHorizontal}"
+                  Content="{iconPacks:Material DotsHorizontal}"
                   IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                   Style="{StaticResource MaterialDesignFloatingActionMiniDarkButton}" />
         </smtx:XamlDisplay>
@@ -903,7 +904,7 @@
                                  ToggleCheckedContentCommandParameter="wowsers"
                                  ToolTip="PopupBox, Style MaterialDesignMultiFloatingActionSecondaryPopupBox">
           <materialDesign:PopupBox.ToggleCheckedContent>
-            <materialDesign:PackIcon Width="24"
+            <iconPacks:PackIconMaterial Width="24"
                                      Height="24"
                                      Kind="Pencil" />
           </materialDesign:PopupBox.ToggleCheckedContent>
@@ -986,7 +987,7 @@
           <Border Background="LightGray" BorderThickness="1" BorderBrush="DarkGray" TextElement.Foreground="Black" CornerRadius="2">
             <StackPanel Orientation="Horizontal" Margin="8">
               <TextBlock Text="This is the content of the SplitButton popup"/>
-              <materialDesign:PackIcon Kind="ThumbUp" VerticalAlignment="Center" Margin="8,0,0,0" />
+              <iconPacks:PackIconMaterial Kind="ThumbUp" VerticalAlignment="Center" Margin="8,0,0,0" />
             </StackPanel>
           </Border>
         </DataTemplate>

@@ -5,6 +5,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:smtx="clr-namespace:ShowMeTheXAML;assembly=ShowMeTheXAML"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              d:DesignHeight="800"
              d:DesignWidth="1000"
              mc:Ignorable="d">
@@ -55,10 +56,10 @@
 
         <smtx:XamlDisplay Margin="0,0,4,4" UniqueKey="chips_5">
           <materialDesign:Chip Content="Twitter"
-                               IconBackground="{DynamicResource PrimaryHueDarkBrush}"
+                               IconBackground="{DynamicResource MaterialDesign.Brush.Primary.Dark}"
                                IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
             <materialDesign:Chip.Icon>
-              <materialDesign:PackIcon Kind="Twitter" />
+              <iconPacks:PackIconMaterial Kind="Twitter" />
             </materialDesign:Chip.Icon>
           </materialDesign:Chip>
         </smtx:XamlDisplay>
@@ -126,11 +127,11 @@
 
         <smtx:XamlDisplay Margin="0,0,4,4" UniqueKey="chips_38">
           <materialDesign:Chip Content="Twitter"
-                               IconBackground="{DynamicResource PrimaryHueDarkBrush}"
+                               IconBackground="{DynamicResource MaterialDesign.Brush.Primary.Dark}"
                                IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}"
                                Style="{StaticResource MaterialDesignOutlineChip}">
             <materialDesign:Chip.Icon>
-              <materialDesign:PackIcon Kind="Twitter" />
+              <iconPacks:PackIconMaterial Kind="Twitter" />
             </materialDesign:Chip.Icon>
           </materialDesign:Chip>
         </smtx:XamlDisplay>

@@ -7,6 +7,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:system="clr-namespace:System;assembly=System.Runtime"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              x:Name="_root"
              Margin="-16,0,-16,0"
              d:DataContext="{d:DesignInstance domain:SmartHintViewModel,
@@ -34,8 +35,8 @@
         <Setter Property="Margin" Value="0,10,0,0" />
         <Setter Property="VerticalAlignment" Value="Center" />
       </Style>
-      <materialDesign:PackIconKind x:Key="LeadingIcon">Github</materialDesign:PackIconKind>
-      <materialDesign:PackIconKind x:Key="TrailingIcon">Fungus</materialDesign:PackIconKind>
+      <iconPacks:PackIconMaterial x:Key="LeadingIcon" Kind="Github" />
+      <iconPacks:PackIconMaterial x:Key="TrailingIcon" Kind="Mushroom" />
 
       <local:DoubleOptionToStringConverter x:Key="DoubleOptionToStringConverter" DefaultValue="{x:Static system:Double.NaN}" />
       <DataTemplate x:Key="CustomHeightTemplate" DataType="{x:Type system:Double}">

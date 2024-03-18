@@ -112,32 +112,6 @@ public class MainWindowViewModel : ViewModelBase
             throw new ArgumentNullException(nameof(snackbarMessageQueue));
 
         yield return new DemoItem(
-            "Palette",
-            typeof(PaletteSelector),
-            new[]
-            {
-                DocumentationLink.WikiLink("Brush-Names", "Brushes"),
-                DocumentationLink.WikiLink("Custom-Palette-Hues", "Custom Palettes"),
-                DocumentationLink.WikiLink("Swatches-and-Recommended-Colors", "Swatches"),
-                DocumentationLink.DemoPageLink<PaletteSelector>("Demo View"),
-                DocumentationLink.DemoPageLink<PaletteSelectorViewModel>("Demo View Model","Domain"),
-                DocumentationLink.ApiLink<PaletteHelper>()
-            });
-
-        yield return new DemoItem(
-            "Color Tool",
-            typeof(ColorTool),
-            new[]
-            {
-                DocumentationLink.WikiLink("Brush-Names", "Brushes"),
-                DocumentationLink.WikiLink("Custom-Palette-Hues", "Custom Palettes"),
-                DocumentationLink.WikiLink("Swatches-and-Recommended-Colors", "Swatches"),
-                DocumentationLink.DemoPageLink<ColorTool>("Demo View"),
-                DocumentationLink.DemoPageLink<ColorToolViewModel>("Demo View Model","Domain"),
-                DocumentationLink.ApiLink<PaletteHelper>()
-            });
-
-        yield return new DemoItem(
             "Buttons",
             typeof(Buttons),
             new[]
@@ -250,22 +224,6 @@ public class MainWindowViewModel : ViewModelBase
             })
         {
             HorizontalScrollBarVisibilityRequirement = ScrollBarVisibility.Disabled
-        };
-
-        yield return new DemoItem(
-            "Icon Pack",
-            typeof(IconPack),
-            new[]
-            {
-                DocumentationLink.DemoPageLink<IconPack>("Demo View"),
-                DocumentationLink.DemoPageLink<IconPackViewModel>("Demo View Model", "Domain"),
-                DocumentationLink.ApiLink<PackIcon>()
-            },
-            new IconPackViewModel(snackbarMessageQueue))
-        {
-            //The icons view handles its own scrolling
-            HorizontalScrollBarVisibilityRequirement = ScrollBarVisibility.Disabled,
-            VerticalScrollBarVisibilityRequirement = ScrollBarVisibility.Disabled
         };
 
         yield return new DemoItem(

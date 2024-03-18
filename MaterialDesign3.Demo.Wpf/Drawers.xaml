@@ -6,6 +6,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:smtx="clr-namespace:ShowMeTheXAML;assembly=ShowMeTheXAML"
              xmlns:system="clr-namespace:System;assembly=mscorlib"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              d:DesignHeight="300"
              d:DesignWidth="300"
              mc:Ignorable="d">
@@ -159,34 +160,34 @@
                   Margin="4"
                   Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}"
                   CommandParameter="{x:Static Dock.Left}"
-                  Content="{materialDesign:PackIcon Kind=ArrowLeft}" />
+                  Content="{iconPacks:Material Kind=ArrowLeft}" />
 
           <Button Grid.Row="0"
                   Grid.Column="1"
                   Margin="4"
                   Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}"
                   CommandParameter="{x:Static Dock.Top}"
-                  Content="{materialDesign:PackIcon Kind=ArrowUp}" />
+                  Content="{iconPacks:Material Kind=ArrowUp}" />
 
           <Button Grid.Row="1"
                   Grid.Column="2"
                   Margin="4"
                   Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}"
                   CommandParameter="{x:Static Dock.Right}"
-                  Content="{materialDesign:PackIcon Kind=ArrowRight}" />
+                  Content="{iconPacks:Material Kind=ArrowRight}" />
 
           <Button Grid.Row="2"
                   Grid.Column="1"
                   Margin="4"
                   Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}"
                   CommandParameter="{x:Static Dock.Bottom}"
-                  Content="{materialDesign:PackIcon Kind=ArrowDown}" />
+                  Content="{iconPacks:Material Kind=ArrowDown}" />
 
           <Button Grid.Row="1"
                   Grid.Column="1"
                   Margin="4"
                   Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}"
-                  Content="{materialDesign:PackIcon Kind=ArrowAll}"
+                  Content="{iconPacks:Material Kind=ArrowAll}"
                   Style="{StaticResource MaterialDesignRaisedSecondaryButton}" />
         </Grid>
 

@@ -7,6 +7,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:smtx="clr-namespace:ShowMeTheXAML;assembly=ShowMeTheXAML"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              d:DesignHeight="450"
              d:DesignWidth="800"
              mc:Ignorable="d">
@@ -39,7 +40,7 @@
                   Background="{DynamicResource SecondaryHueMidBrush}"
                   BorderThickness="0"
                   Foreground="{DynamicResource SecondaryHueMidBrushForeground}">
-            <materialDesign:PackIcon Width="24"
+            <iconPacks:PackIconMaterial Width="24"
                                      Height="24"
                                      Kind="PencilOutline" />
           </Button>
@@ -105,7 +106,7 @@
                   Click="Button_Click"
                   Foreground="{DynamicResource SecondaryHueMidBrushForeground}"
                   Style="{StaticResource MaterialDesignFlatMidBgButton}">
-            <materialDesign:PackIcon Width="24"
+            <iconPacks:PackIconMaterial Width="24"
                                      Height="24"
                                      Kind="PencilOutline" />
           </Button>
@@ -151,7 +152,7 @@
                   Click="Button_Click_1"
                   Foreground="{DynamicResource SecondaryHueMidBrushForeground}"
                   Style="{StaticResource MaterialDesignFlatMidBgButton}">
-            <materialDesign:PackIcon Width="24"
+            <iconPacks:PackIconMaterial Width="24"
                                      Height="24"
                                      Kind="PencilOutline" />
           </Button>
@@ -204,7 +205,7 @@
                     BorderThickness="0"
                     Foreground="#002117"
                     Style="{StaticResource MaterialDesignFlatMidBgButton}">
-              <materialDesign:PackIcon Width="24"
+              <iconPacks:PackIconMaterial Width="24"
                                        Height="24"
                                        Kind="PencilOutline" />
             </Button>
@@ -251,7 +252,7 @@
                     BorderThickness="0"
                     Foreground="#FFD8E4"
                     Style="{StaticResource MaterialDesignFlatMidBgButton}">
-              <materialDesign:PackIcon Width="24"
+              <iconPacks:PackIconMaterial Width="24"
                                        Height="24"
                                        Kind="PencilOutline" />
             </Button>
@@ -330,7 +331,7 @@
                     BorderThickness="0"
                     Foreground="{DynamicResource SecondaryHueMidBrushForeground}"
                     Style="{StaticResource MaterialDesignFlatMidBgButton}">
-              <materialDesign:PackIcon Width="36"
+              <iconPacks:PackIconMaterial Width="36"
                                        Height="36"
                                        Kind="PencilOutline" />
             </Button>
@@ -375,7 +376,7 @@
                     BorderThickness="0"
                     Foreground="#FFD8E4"
                     Style="{StaticResource MaterialDesignFlatMidBgButton}">
-              <materialDesign:PackIcon Width="40"
+              <iconPacks:PackIconMaterial Width="40"
                                        Height="40"
                                        Kind="PencilOutline" />
             </Button>

@@ -2,7 +2,8 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:converters="clr-namespace:MaterialDesignThemes.Wpf.Converters"
                     xmlns:internal="clr-namespace:MaterialDesignThemes.Wpf.Internal"
-                    xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf">
+                    xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf"
+                    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks">
   <ResourceDictionary.MergedDictionaries>
     <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Calendar.xaml" />
     <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.ValidationErrorTemplate.xaml" />
@@ -222,7 +223,7 @@
                         <Binding ElementName="Hint" Path="IsContentNullOrEmpty" />
                       </MultiBinding>
                     </Button.Visibility>
-                    <wpf:PackIcon Margin="0" Kind="CloseCircle" />
+                    <iconPacks:PackIconMaterial Margin="0" Kind="CloseCircle" />
                   </Button>
                 </Grid>
               </Border>
@@ -513,7 +514,7 @@
         <ControlTemplate TargetType="{x:Type DatePicker}">
           <ControlTemplate.Resources>
             <ControlTemplate x:Key="CalendarButtonTemplate" TargetType="{x:Type Button}">
-              <wpf:PackIcon VerticalAlignment="Center"
+              <iconPacks:PackIconMaterial VerticalAlignment="Center"
                             Background="Transparent"
                             Foreground="{TemplateBinding Foreground}"
                             Kind="Calendar" />

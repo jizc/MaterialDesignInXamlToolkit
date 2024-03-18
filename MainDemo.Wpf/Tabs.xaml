@@ -6,6 +6,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:smtx="clr-namespace:ShowMeTheXAML;assembly=ShowMeTheXAML"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              d:DataContext="{d:DesignInstance Type=domain:TabsViewModel,
                                               IsDesignTimeCreatable=True}"
              d:DesignHeight="4000"
@@ -603,7 +604,7 @@
                 <Button Command="{Binding CloseCommand}">
                   <Button.Template>
                     <ControlTemplate>
-                      <materialDesign:PackIcon Background="Transparent"
+                      <iconPacks:PackIconMaterial Background="Transparent"
                                                Foreground="Red"
                                                Kind="Close" />
                     </ControlTemplate>

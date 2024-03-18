@@ -6,6 +6,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:system="clr-namespace:System;assembly=mscorlib"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
         Title="Material Design in XAML"
         Width="1100"
         Height="800"
@@ -77,7 +78,7 @@
                     DockPanel.Dock="Right"
                     Foreground="{DynamicResource MaterialDesign.Brush.Foreground}"
                     Style="{StaticResource MaterialDesignIconForegroundButton}">
-              <materialDesign:PackIcon Width="36"
+              <iconPacks:PackIconMaterial Width="36"
                                        Height="36"
                                        Kind="MenuOpen" />
             </Button>
@@ -94,7 +95,7 @@
                   DockPanel.Dock="Top"
                   Foreground="{DynamicResource SecondaryHueMidBrushForeground}">
             <StackPanel Orientation="Horizontal">
-              <materialDesign:PackIcon Width="24"
+              <iconPacks:PackIconMaterial Width="24"
                                        Height="24"
                                        VerticalAlignment="Center"
                                        Kind="Github" />
@@ -167,8 +168,7 @@
               <Button Margin="0,0,0,0"
                       materialDesign:RippleAssist.Feedback="{Binding RelativeSource={RelativeSource Self}, Path=Foreground, Converter={StaticResource BrushRoundConverter}}"
                       Command="{Binding MovePrevCommand}"
-                      Content="{materialDesign:PackIcon Kind=ArrowLeft,
-                                                        Size=24}"
+                      Content="{iconPacks:Material Kind=ArrowLeft, Width=24, Height=24}"
                       Foreground="{Binding RelativeSource={RelativeSource AncestorType={x:Type FrameworkElement}}, Path=(TextElement.Foreground)}"
                       Style="{StaticResource MaterialDesignToolButton}"
                       ToolTip="Previous Item" />
@@ -176,8 +176,7 @@
               <Button Margin="16,0,0,0"
                       materialDesign:RippleAssist.Feedback="{Binding RelativeSource={RelativeSource Self}, Path=Foreground, Converter={StaticResource BrushRoundConverter}}"
                       Command="{Binding MoveNextCommand}"
-                      Content="{materialDesign:PackIcon Kind=ArrowRight,
-                                                        Size=24}"
+                      Content="{iconPacks:Material Kind=ArrowRight, Width=24, Height=24}"
                       Foreground="{Binding RelativeSource={RelativeSource AncestorType={x:Type FrameworkElement}}, Path=(TextElement.Foreground)}"
                       Style="{StaticResource MaterialDesignToolButton}"
                       ToolTip="Next Item" />
@@ -210,9 +209,6 @@
                   <TextBlock Margin="0,0,10,0"
                              Text="Light"
                              VerticalAlignment="Center" />
-                  <ToggleButton x:Name="DarkModeToggleButton"
-                                Grid.Column="1"
-                                Click="MenuDarkModeButton_Click" />
                   <TextBlock Grid.Column="2"
                              Margin="10,0,0,0"
                              Text="Dark"
@@ -282,7 +278,7 @@
                     BorderThickness="0"
                     Click="GitHubButton_OnClick"
                     Foreground="{DynamicResource SecondaryHueMidBrushForeground}">
-              <materialDesign:PackIcon Width="24"
+              <iconPacks:PackIconMaterial Width="24"
                                        Height="24"
                                        Kind="Github" />
             </Button>
@@ -348,7 +344,7 @@
                 <Button Grid.Row="0"
                         HorizontalAlignment="Right"
                         Click="CloseNotificationPanel_Click"
-                        Content="{materialDesign:PackIcon Kind=Close}"
+                        Content="{iconPacks:Material Kind=Close}"
                         Style="{StaticResource MaterialDesignIconForegroundButton}" />
                 <TextBlock Grid.Row="1"
                            Margin="0,0,0,20"
@@ -425,7 +421,7 @@
                 BorderThickness="0"
                 Click="GitHubButton_OnClick"
                 Foreground="{DynamicResource SecondaryHueMidBrushForeground}">
-          <materialDesign:PackIcon Width="36"
+          <iconPacks:PackIconMaterial Width="36"
                                    Height="36"
                                    Kind="Github" />
         </Button>

@@ -2,33 +2,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFrameworks>net472;net6.0-windows;net7.0-windows;net8.0-windows</TargetFrameworks>
+    <TargetFrameworks>net8.0-windows</TargetFrameworks>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Prefer32Bit Condition="'$(TargetFramework)' == 'net472'">true</Prefer32Bit>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
     <UseWPF>true</UseWPF>
     <SignAssembly>false</SignAssembly>
     <ApplicationManifest>App.manifest</ApplicationManifest>
   </PropertyGroup>
-  <ItemGroup Condition="'$(TargetFramework)'=='net472'">
-    <Reference Include="PresentationFramework.Aero2" />
-    <Reference Include="System" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Xaml">
-      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+  <ItemGroup>
+    <Reference Include="MahApps.Metro.IconPacks.Core">
+      <HintPath>..\Libraries\MahApps.Metro.IconPacks\MahApps.Metro.IconPacks.Core.dll</HintPath>
     </Reference>
-    <Reference Include="WindowsBase" />
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
+    <Reference Include="MahApps.Metro.IconPacks.Material">
+      <HintPath>..\Libraries\MahApps.Metro.IconPacks\MahApps.Metro.IconPacks.Material.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MaterialDesignColors.Wpf\MaterialDesignColors.Wpf.csproj" />
     <ProjectReference Include="..\MaterialDesignThemes.Wpf\MaterialDesignThemes.Wpf.csproj" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +31,7 @@
       <NoWarn>NU1701</NoWarn>
     </PackageReference>
     <PackageReference Include="CommunityToolkit.Mvvm" />
+    <PackageReference Include="MaterialDesignColors" />
     <PackageReference Include="System.CommandLine" />
     <PackageReference Include="VirtualizingWrapPanel" />
     <PackageReference Include="ShowMeTheXAML" />

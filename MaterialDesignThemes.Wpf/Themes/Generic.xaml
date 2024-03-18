@@ -23,7 +23,6 @@
     <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Clock.xaml" />
     <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Flipper.xaml" />
     <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.FlipperClassic.xaml" />
-    <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.ColorPicker.xaml" />
     <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.PopupBox.xaml" />
     <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.RatingBar.xaml" />
     <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.TimePicker.xaml" />
@@ -1149,30 +1148,6 @@
     </Setter>
     <Setter Property="TopDrawerBackground" Value="{DynamicResource MaterialDesign.Brush.Background}" />
     <Setter Property="local:ElevationAssist.Elevation" Value="Dp8" />
-  </Style>
-
-  <Style TargetType="{x:Type local:PackIcon}">
-    <Setter Property="FlowDirection" Value="LeftToRight" />
-    <Setter Property="Height" Value="16" />
-    <Setter Property="HorizontalAlignment" Value="Left" />
-    <Setter Property="IsTabStop" Value="False" />
-    <Setter Property="Template">
-      <Setter.Value>
-        <ControlTemplate TargetType="{x:Type local:PackIcon}">
-          <Border Background="{TemplateBinding Background}"
-                  BorderBrush="{TemplateBinding BorderBrush}"
-                  BorderThickness="{TemplateBinding BorderThickness}">
-            <Viewbox FlowDirection="{TemplateBinding FlowDirection}">
-              <Canvas Width="24" Height="24">
-                <Path Data="{Binding Data, RelativeSource={RelativeSource TemplatedParent}}" Fill="{TemplateBinding Foreground}" />
-              </Canvas>
-            </Viewbox>
-          </Border>
-        </ControlTemplate>
-      </Setter.Value>
-    </Setter>
-    <Setter Property="VerticalAlignment" Value="Top" />
-    <Setter Property="Width" Value="16" />
   </Style>
 
   <Style TargetType="{x:Type transitions:Transitioner}">

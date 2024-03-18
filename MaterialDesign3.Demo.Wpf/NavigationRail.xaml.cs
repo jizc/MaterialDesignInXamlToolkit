@@ -1,4 +1,5 @@
-﻿using MaterialDesign3Demo.Domain;
+﻿using MahApps.Metro.IconPacks;
+using MaterialDesign3Demo.Domain;
 using MaterialDesignThemes.Wpf;
 
 namespace MaterialDesign3Demo;
@@ -18,39 +19,39 @@ public partial class NavigationRail
             new SampleItem
             {
                 Title = "Payment",
-                SelectedIcon = PackIconKind.CreditCard,
-                UnselectedIcon = PackIconKind.CreditCardOutline,
+                SelectedIcon = PackIconMaterialKind.CreditCard,
+                UnselectedIcon = PackIconMaterialKind.CreditCardOutline,
                 Notification = 1
             },
             new SampleItem
             {
                 Title = "Home",
-                SelectedIcon = PackIconKind.Home,
-                UnselectedIcon = PackIconKind.HomeOutline,
+                SelectedIcon = PackIconMaterialKind.Home,
+                UnselectedIcon = PackIconMaterialKind.HomeOutline,
             },
             new SampleItem
             {
                 Title = "Special",
-                SelectedIcon = PackIconKind.Star,
-                UnselectedIcon = PackIconKind.StarOutline,
+                SelectedIcon = PackIconMaterialKind.Star,
+                UnselectedIcon = PackIconMaterialKind.StarOutline,
             },
             new SampleItem
             {
                 Title = "Shared",
-                SelectedIcon = PackIconKind.Users,
-                UnselectedIcon = PackIconKind.UsersOutline,
+                SelectedIcon = PackIconMaterialKind.AccountMultiple,
+                UnselectedIcon = PackIconMaterialKind.AccountMultipleOutline,
             },
             new SampleItem
             {
                 Title = "Files",
-                SelectedIcon = PackIconKind.Folder,
-                UnselectedIcon = PackIconKind.FolderOutline,
+                SelectedIcon = PackIconMaterialKind.Folder,
+                UnselectedIcon = PackIconMaterialKind.FolderOutline,
             },
             new SampleItem
             {
                 Title = "Library",
-                SelectedIcon = PackIconKind.Bookshelf,
-                UnselectedIcon = PackIconKind.Bookshelf,
+                SelectedIcon = PackIconMaterialKind.Bookshelf,
+                UnselectedIcon = PackIconMaterialKind.Bookshelf,
             },
         };
     }

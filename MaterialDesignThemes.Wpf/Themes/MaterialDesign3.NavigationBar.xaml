@@ -1,7 +1,8 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:converters="clr-namespace:MaterialDesignThemes.Wpf.Converters"
-                    xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf">
+                    xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf"
+                    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks">
   <ResourceDictionary.MergedDictionaries>
     <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.ListBox.xaml" />
     <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Badged.xaml" />
@@ -129,7 +130,7 @@
                               BadgePlacementMode="{Binding Path=(wpf:BadgedAssist.BadgePlacementMode), RelativeSource={RelativeSource TemplatedParent}}"
                               Style="{StaticResource MaterialDesignBadge}">
 
-                    <wpf:PackIcon x:Name="Icon"
+                    <iconPacks:PackIconMaterial x:Name="Icon"
                                   Width="{Binding Path=(wpf:NavigationBarAssist.IconSize), RelativeSource={RelativeSource TemplatedParent}}"
                                   Height="{Binding Path=(wpf:NavigationBarAssist.IconSize), RelativeSource={RelativeSource TemplatedParent}}"
                                   HorizontalAlignment="Center"

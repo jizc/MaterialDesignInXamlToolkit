@@ -4,6 +4,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              d:DesignHeight="300"
              d:DesignWidth="300"
              mc:Ignorable="d">
@@ -14,8 +15,6 @@
         <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Button.xaml" />
         <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.PopupBox.xaml" />
         <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.TextBlock.xaml" />
-        <!-- throw in some extra colour for our floating action button -->
-        <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/MaterialDesignColor.Green.Named.Primary.xaml" />
       </ResourceDictionary.MergedDictionaries>
     </ResourceDictionary>
   </UserControl.Resources>
@@ -50,7 +49,7 @@
                 CommandParameter="{x:Static Dock.Left}"
                 Style="{StaticResource MaterialDesignFlatButton}">
           <StackPanel Orientation="Horizontal">
-            <materialDesign:PackIcon Kind="Binoculars" />
+            <iconPacks:PackIconMaterial Kind="Binoculars" />
             <TextBlock Margin="8,0,0,0" Text="EXPLORE" />
           </StackPanel>
         </Button>
@@ -111,7 +110,7 @@
                           Click="GitHubButton_OnClick"
                           Style="{StaticResource MaterialDesignFlatButton}">
                     <StackPanel Orientation="Horizontal">
-                      <materialDesign:PackIcon Kind="Github" />
+                      <iconPacks:PackIconMaterial Kind="Github" />
                       <TextBlock Margin="8,0,0,0"
                                  VerticalAlignment="Center"
                                  Text="GitHub" />
@@ -123,7 +122,7 @@
                           Click="TwitterButton_OnClick"
                           Style="{StaticResource MaterialDesignFlatButton}">
                     <StackPanel Orientation="Horizontal">
-                      <materialDesign:PackIcon Kind="Twitter" />
+                      <iconPacks:PackIconMaterial Kind="Twitter" />
                       <TextBlock Margin="8,0,0,0"
                                  VerticalAlignment="Center"
                                  Text="Twitter" />
@@ -142,7 +141,7 @@
                           Click="ChatButton_OnClick"
                           Style="{StaticResource MaterialDesignFlatButton}">
                     <StackPanel Orientation="Horizontal">
-                      <materialDesign:PackIcon Kind="Message" />
+                      <iconPacks:PackIconMaterial Kind="Message" />
                       <TextBlock Margin="8,0,0,0"
                                  VerticalAlignment="Center"
                                  Text="Chat" />
@@ -154,7 +153,7 @@
                           Click="EmailButton_OnClick"
                           Style="{StaticResource MaterialDesignFlatButton}">
                     <StackPanel Orientation="Horizontal">
-                      <materialDesign:PackIcon Kind="Email" />
+                      <iconPacks:PackIconMaterial Kind="Email" />
                       <TextBlock Margin="8,0,0,0"
                                  VerticalAlignment="Center"
                                  Text="Email" />
@@ -179,7 +178,7 @@
                 <ColumnDefinition Width="*" />
               </Grid.ColumnDefinitions>
 
-              <materialDesign:PackIcon Width="160"
+              <iconPacks:PackIconMaterial Width="160"
                                        Height="160"
                                        HorizontalAlignment="Center"
                                        VerticalAlignment="Center"
@@ -208,7 +207,7 @@
                           DockPanel.Dock="Right"
                           Style="{StaticResource MaterialDesignFlatButton}">
                     <StackPanel Orientation="Horizontal">
-                      <materialDesign:PackIcon Kind="Gift" />
+                      <iconPacks:PackIconMaterial Kind="Gift" />
                       <TextBlock Margin="8,0,0,0"
                                  VerticalAlignment="Center"
                                  Text="Donate" />
@@ -228,61 +227,5 @@
       </Grid>
     </ScrollViewer>
 
-    <!--<materialDesign:PopupBox
-            Style="{StaticResource MaterialDesignMultiFloatingActionPopupBox}"
-            HorizontalAlignment="Right"
-            VerticalAlignment="Bottom"
-            Margin="32"
-            Grid.Row="1">
-            <StackPanel>
-                <Button
-                    ToolTip="GitHub"
-                    Click="GitHubButton_OnClick"
-                    Content="{materialDesign:PackIcon Kind=Github, Size=20}"/>
-
-                <Button
-                    ToolTip="Twitter"
-                    Click="TwitterButton_OnClick"
-                    Background="{DynamicResource PrimaryHueMidBrush}"
-                    Foreground="{DynamicResource PrimaryHueMidForegroundBrush}"
-                    Content="{materialDesign:PackIcon Kind=Twitter, Size=20}"/>
-
-                <Button
-                    ToolTip="Chat"
-                    Click="ChatButton_OnClick"
-                    Content="{materialDesign:PackIcon Kind=Message, Size=20}">
-    -->
-    <!-- mix up the colours by bringing in a named palette (see merged dictionaries at top) -->
-    <!--
-                    <Button.Background>
-                        <SolidColorBrush Color="{StaticResource GreenPrimary500}"/>
-                    </Button.Background>
-
-                    <Button.Foreground>
-                        <SolidColorBrush Color="{StaticResource GreenPrimary500Foreground}"/>
-                    </Button.Foreground>
-                </Button>
-
-                <Button
-                    ToolTip="Email"
-                    Click="EmailButton_OnClick"
-                    Background="{DynamicResource SecondaryHueMidBrush}"
-                    Foreground="{DynamicResource SecondaryHueMidForegroundBrush}"
-                    Content="{materialDesign:PackIcon Kind=Email, Size=20}"/>
-
-                <Button
-                    ToolTip="Feel like you want to make a donation?  It would be gratefully received.  Click the button to donate via Pledgie."
-                    Click="DonateButton_OnClick"
-                    Content="{materialDesign:PackIcon Kind=Gift, Size=20}">
-                    <Button.Background>
-                        <SolidColorBrush Color="{StaticResource GreenPrimary200}"/>
-                    </Button.Background>
-
-                    <Button.Foreground>
-                        <SolidColorBrush Color="{StaticResource GreenPrimary200Foreground}"/>
-                    </Button.Foreground>
-                </Button>
-            </StackPanel>
-        </materialDesign:PopupBox>-->
   </Grid>
 </UserControl>

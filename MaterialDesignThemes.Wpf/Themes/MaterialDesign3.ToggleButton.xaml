@@ -3,7 +3,8 @@
                     xmlns:converters="clr-namespace:MaterialDesignThemes.Wpf.Converters"
                     xmlns:po="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
                     xmlns:system="clr-namespace:System;assembly=mscorlib"
-                    xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf">
+                    xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf"
+                    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks">
 
   <converters:MathConverter x:Key="DivisionMathConverter" Operation="Divide" />
   <converters:PointValueConverter x:Key="PointValueConverter" />
@@ -22,14 +23,14 @@
     </Setter>
   </Style>
 
-  <wpf:PackIcon x:Key="CheckMarkIcon"
+  <iconPacks:PackIconMaterial x:Key="CheckMarkIcon"
                 Width="24"
                 Height="24"
                 x:Shared="False"
                 FlowDirection="LeftToRight"
                 Kind="Check" />
 
-  <wpf:PackIcon x:Key="SwitchCheckMarkIcon"
+  <iconPacks:PackIconMaterial x:Key="SwitchCheckMarkIcon"
                 Width="16"
                 Height="16"
                 x:Shared="False"
@@ -38,7 +39,7 @@
   <Style x:Key="MaterialDesignActionToggleButton" TargetType="{x:Type ToggleButton}">
     <Style.Resources>
       <ResourceDictionary>
-        <Style TargetType="wpf:PackIcon" BasedOn="{StaticResource {x:Type wpf:PackIcon}}">
+        <Style TargetType="iconPacks:PackIconMaterial" BasedOn="{StaticResource {x:Type iconPacks:PackIconMaterial}}">
           <Setter Property="Height" Value="20" />
           <Setter Property="Width" Value="20" />
         </Style>

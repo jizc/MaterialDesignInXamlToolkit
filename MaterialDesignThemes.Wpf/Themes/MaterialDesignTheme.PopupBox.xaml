@@ -1,7 +1,8 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:converters="clr-namespace:MaterialDesignThemes.Wpf.Converters"
-                    xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf">
+                    xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf"
+                    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks">
 
   <ResourceDictionary.MergedDictionaries>
     <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Button.xaml" />
@@ -72,7 +73,7 @@
   <converters:BrushRoundConverter x:Key="BrushRoundConverter" />
   <converters:NotConverter x:Key="NotConverter" />
 
-  <wpf:PackIcon x:Key="MaterialDesignPopupBoxToggleContent"
+  <iconPacks:PackIconMaterial x:Key="MaterialDesignPopupBoxToggleContent"
                 Width="24"
                 Height="24"
                 Margin="4,0,4,0"
@@ -191,7 +192,7 @@
     <Setter Property="Foreground" Value="{Binding RelativeSource={RelativeSource AncestorType={x:Type FrameworkElement}}, Path=(TextElement.Foreground)}" />
   </Style>
 
-  <wpf:PackIcon x:Key="MaterialDesignMultiFloatingActionPopupBoxIcon"
+  <iconPacks:PackIconMaterial x:Key="MaterialDesignMultiFloatingActionPopupBoxIcon"
                 Width="24"
                 Height="24"
                 x:Shared="False"

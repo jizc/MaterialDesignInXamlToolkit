@@ -9,6 +9,7 @@
              xmlns:materialDesignDemo="clr-namespace:MaterialDesignDemo"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:smtx="clr-namespace:ShowMeTheXAML;assembly=ShowMeTheXAML"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              d:DataContext="{d:DesignInstance colorsDomain:ComboBoxesViewModel,
                                               IsDesignTimeCreatable=False}"
              d:DesignHeight="300"
@@ -189,7 +190,7 @@
     </StackPanel>
 
     <StackPanel Margin="0,40,0,0" Orientation="Horizontal">
-      <materialDesign:PackIcon Margin="0,0,5,0" Kind="Information" />
+      <iconPacks:PackIconMaterial Margin="0,0,5,0" Kind="Information" />
       <TextBlock>ComboBoxes are virtualized by default in the library</TextBlock>
     </StackPanel>
 

@@ -5,6 +5,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:smtx="clr-namespace:ShowMeTheXAML;assembly=ShowMeTheXAML"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              d:DesignHeight="400"
              d:DesignWidth="600"
              mc:Ignorable="d">
@@ -142,10 +143,10 @@
           <Expander HorizontalAlignment="Stretch" Header="Expander Example 3a">
             <Expander.Style>
               <Style TargetType="Expander" BasedOn="{StaticResource MaterialDesignExpander}">
-                <Setter Property="materialDesign:ExpanderAssist.ExpanderButtonContent" Value="{materialDesign:PackIcon Kind=Plus}" />
+                <Setter Property="materialDesign:ExpanderAssist.ExpanderButtonContent" Value="{iconPacks:Material Kind=Plus}" />
                 <Style.Triggers>
                   <Trigger Property="IsExpanded" Value="True">
-                    <Setter Property="materialDesign:ExpanderAssist.ExpanderButtonContent" Value="{materialDesign:PackIcon Kind=Minus}" />
+                    <Setter Property="materialDesign:ExpanderAssist.ExpanderButtonContent" Value="{iconPacks:Material Kind=Minus}" />
                   </Trigger>
                 </Style.Triggers>
               </Style>
@@ -255,10 +256,10 @@
         <Expander ExpandDirection="Right" materialDesign:ExpanderAssist.ExpanderButtonPosition="Start">
           <Expander.Style>
             <Style TargetType="Expander" BasedOn="{StaticResource MaterialDesignExpander}">
-              <Setter Property="materialDesign:ExpanderAssist.ExpanderButtonContent" Value="{materialDesign:PackIcon Kind=Plus}" />
+              <Setter Property="materialDesign:ExpanderAssist.ExpanderButtonContent" Value="{iconPacks:Material Kind=Plus}" />
               <Style.Triggers>
                 <Trigger Property="IsExpanded" Value="True">
-                  <Setter Property="materialDesign:ExpanderAssist.ExpanderButtonContent" Value="{materialDesign:PackIcon Kind=Minus}" />
+                  <Setter Property="materialDesign:ExpanderAssist.ExpanderButtonContent" Value="{iconPacks:Material Kind=Minus}" />
                 </Trigger>
               </Style.Triggers>
             </Style>

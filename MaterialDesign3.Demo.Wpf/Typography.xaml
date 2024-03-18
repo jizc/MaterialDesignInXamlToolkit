@@ -5,6 +5,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:smtx="clr-namespace:ShowMeTheXAML;assembly=ShowMeTheXAML"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              mc:Ignorable="d">
   <UserControl.Resources>
     <Style x:Key="Caption"
@@ -54,7 +55,7 @@
     <!-- MaterialDesignDisplayLargeTextBlock -->
     <Border Grid.Row="0" Grid.Column="0">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="LetterABoxOutline" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="AlphaABoxOutline" />
 
         <TextBlock Style="{StaticResource Caption}" Text="Regular" />
       </StackPanel>
@@ -62,7 +63,7 @@
 
     <Border Grid.Row="0" Grid.Column="2">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="FormatSize" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="FormatSize" />
 
         <TextBlock Style="{StaticResource Caption}" Text="57" />
       </StackPanel>
@@ -70,7 +71,7 @@
 
     <Border Grid.Row="0" Grid.Column="4">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="ArrowUpDown" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="ArrowUpDown" />
 
         <TextBlock Style="{StaticResource Caption}" Text="64" />
       </StackPanel>
@@ -88,7 +89,7 @@
     <!-- MaterialDesignDisplayMediumTextBlock -->
     <Border Grid.Row="1" Grid.Column="0">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="LetterABoxOutline" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="AlphaABoxOutline" />
 
         <TextBlock Style="{StaticResource Caption}" Text="Regular" />
       </StackPanel>
@@ -96,7 +97,7 @@
 
     <Border Grid.Row="1" Grid.Column="2">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="FormatSize" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="FormatSize" />
 
         <TextBlock Style="{StaticResource Caption}" Text="45" />
       </StackPanel>
@@ -104,7 +105,7 @@
 
     <Border Grid.Row="1" Grid.Column="4">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="ArrowUpDown" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="ArrowUpDown" />
 
         <TextBlock Style="{StaticResource Caption}" Text="52" />
       </StackPanel>
@@ -122,7 +123,7 @@
     <!-- MaterialDesignDisplaySmallTextBlock -->
     <Border Grid.Row="2" Grid.Column="0">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="LetterABoxOutline" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="AlphaABoxOutline" />
 
         <TextBlock Style="{StaticResource Caption}" Text="Regular" />
       </StackPanel>
@@ -130,7 +131,7 @@
 
     <Border Grid.Row="2" Grid.Column="2">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="FormatSize" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="FormatSize" />
 
         <TextBlock Style="{StaticResource Caption}" Text="36" />
       </StackPanel>
@@ -138,7 +139,7 @@
 
     <Border Grid.Row="2" Grid.Column="4">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="ArrowUpDown" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="ArrowUpDown" />
 
         <TextBlock Style="{StaticResource Caption}" Text="44" />
       </StackPanel>
@@ -156,7 +157,7 @@
     <!-- MaterialDesignHeadlineLargeTextBlock -->
     <Border Grid.Row="3" Grid.Column="0">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="LetterABoxOutline" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="AlphaABoxOutline" />
 
         <TextBlock Style="{StaticResource Caption}" Text="Regular" />
       </StackPanel>
@@ -164,7 +165,7 @@
 
     <Border Grid.Row="3" Grid.Column="2">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="FormatSize" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="FormatSize" />
 
         <TextBlock Style="{StaticResource Caption}" Text="32" />
       </StackPanel>
@@ -172,7 +173,7 @@
 
     <Border Grid.Row="3" Grid.Column="4">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="ArrowUpDown" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="ArrowUpDown" />
 
         <TextBlock Style="{StaticResource Caption}" Text="40" />
       </StackPanel>
@@ -190,7 +191,7 @@
     <!-- MaterialDesignHeadlineMediumTextBlock -->
     <Border Grid.Row="4" Grid.Column="0">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="LetterABoxOutline" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="AlphaABoxOutline" />
 
         <TextBlock Style="{StaticResource Caption}" Text="Regular" />
       </StackPanel>
@@ -198,7 +199,7 @@
 
     <Border Grid.Row="4" Grid.Column="2">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="FormatSize" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="FormatSize" />
 
         <TextBlock Style="{StaticResource Caption}" Text="28" />
       </StackPanel>
@@ -206,7 +207,7 @@
 
     <Border Grid.Row="4" Grid.Column="4">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="ArrowUpDown" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="ArrowUpDown" />
 
         <TextBlock Style="{StaticResource Caption}" Text="36" />
       </StackPanel>
@@ -224,7 +225,7 @@
     <!-- MaterialDesignHeadlineSmallTextBlock -->
     <Border Grid.Row="5" Grid.Column="0">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="LetterABoxOutline" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="AlphaABoxOutline" />
 
         <TextBlock Style="{StaticResource Caption}" Text="Regular" />
       </StackPanel>
@@ -232,7 +233,7 @@
 
     <Border Grid.Row="5" Grid.Column="2">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="FormatSize" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="FormatSize" />
 
         <TextBlock Style="{StaticResource Caption}" Text="24" />
       </StackPanel>
@@ -240,7 +241,7 @@
 
     <Border Grid.Row="5" Grid.Column="4">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="ArrowUpDown" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="ArrowUpDown" />
 
         <TextBlock Style="{StaticResource Caption}" Text="32" />
       </StackPanel>
@@ -258,7 +259,7 @@
     <!-- MaterialDesignTitleLargeTextBlock -->
     <Border Grid.Row="6" Grid.Column="0">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="LetterABoxOutline" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="AlphaABoxOutline" />
 
         <TextBlock Style="{StaticResource Caption}" Text="Medium" />
       </StackPanel>
@@ -266,7 +267,7 @@
 
     <Border Grid.Row="6" Grid.Column="2">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="FormatSize" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="FormatSize" />
 
         <TextBlock Style="{StaticResource Caption}" Text="22" />
       </StackPanel>
@@ -274,7 +275,7 @@
 
     <Border Grid.Row="6" Grid.Column="4">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="ArrowUpDown" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="ArrowUpDown" />
 
         <TextBlock Style="{StaticResource Caption}" Text="28" />
       </StackPanel>
@@ -292,7 +293,7 @@
     <!-- MaterialDesignTitleMediumTextBlock -->
     <Border Grid.Row="7" Grid.Column="0">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="LetterABoxOutline" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="AlphaABoxOutline" />
 
         <TextBlock Style="{StaticResource Caption}" Text="Medium" />
       </StackPanel>
@@ -300,7 +301,7 @@
 
     <Border Grid.Row="7" Grid.Column="2">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="FormatSize" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="FormatSize" />
 
         <TextBlock Style="{StaticResource Caption}" Text="16" />
       </StackPanel>
@@ -308,7 +309,7 @@
 
     <Border Grid.Row="7" Grid.Column="4">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="ArrowUpDown" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="ArrowUpDown" />
 
         <TextBlock Style="{StaticResource Caption}" Text="24" />
       </StackPanel>
@@ -326,7 +327,7 @@
     <!-- MaterialDesignTitleSmallTextBlock -->
     <Border Grid.Row="8" Grid.Column="0">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="LetterABoxOutline" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="AlphaABoxOutline" />
 
         <TextBlock Style="{StaticResource Caption}" Text="Medium" />
       </StackPanel>
@@ -334,7 +335,7 @@
 
     <Border Grid.Row="8" Grid.Column="2">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="FormatSize" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="FormatSize" />
 
         <TextBlock Style="{StaticResource Caption}" Text="14" />
       </StackPanel>
@@ -342,7 +343,7 @@
 
     <Border Grid.Row="8" Grid.Column="4">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="ArrowUpDown" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="ArrowUpDown" />
 
         <TextBlock Style="{StaticResource Caption}" Text="20" />
       </StackPanel>
@@ -360,7 +361,7 @@
     <!-- MaterialDesignLabelLargeTextBlock -->
     <Border Grid.Row="9" Grid.Column="0">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="LetterABoxOutline" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="AlphaABoxOutline" />
 
         <TextBlock Style="{StaticResource Caption}" Text="Medium" />
       </StackPanel>
@@ -368,7 +369,7 @@
 
     <Border Grid.Row="9" Grid.Column="2">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="FormatSize" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="FormatSize" />
 
         <TextBlock Style="{StaticResource Caption}" Text="14" />
       </StackPanel>
@@ -376,7 +377,7 @@
 
     <Border Grid.Row="9" Grid.Column="4">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="ArrowUpDown" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="ArrowUpDown" />
 
         <TextBlock Style="{StaticResource Caption}" Text="20" />
       </StackPanel>
@@ -394,7 +395,7 @@
     <!-- MaterialDesignLabelMediumTextBlock -->
     <Border Grid.Row="10" Grid.Column="0">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="LetterABoxOutline" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="AlphaABoxOutline" />
 
         <TextBlock Style="{StaticResource Caption}" Text="Medium" />
       </StackPanel>
@@ -402,7 +403,7 @@
 
     <Border Grid.Row="10" Grid.Column="2">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="FormatSize" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="FormatSize" />
 
         <TextBlock Style="{StaticResource Caption}" Text="12" />
       </StackPanel>
@@ -410,7 +411,7 @@
 
     <Border Grid.Row="10" Grid.Column="4">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="ArrowUpDown" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="ArrowUpDown" />
 
         <TextBlock Style="{StaticResource Caption}" Text="16" />
       </StackPanel>
@@ -428,7 +429,7 @@
     <!-- MaterialDesignLabelSmallTextBlock -->
     <Border Grid.Row="11" Grid.Column="0">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="LetterABoxOutline" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="AlphaABoxOutline" />
 
         <TextBlock Style="{StaticResource Caption}" Text="Medium" />
       </StackPanel>
@@ -436,7 +437,7 @@
 
     <Border Grid.Row="11" Grid.Column="2">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="FormatSize" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="FormatSize" />
 
         <TextBlock Style="{StaticResource Caption}" Text="11" />
       </StackPanel>
@@ -444,7 +445,7 @@
 
     <Border Grid.Row="11" Grid.Column="4">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="ArrowUpDown" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="ArrowUpDown" />
 
         <TextBlock Style="{StaticResource Caption}" Text="16" />
       </StackPanel>
@@ -462,7 +463,7 @@
     <!-- MaterialDesignBodyLargeTextBlock -->
     <Border Grid.Row="12" Grid.Column="0">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="LetterABoxOutline" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="AlphaABoxOutline" />
 
         <TextBlock Style="{StaticResource Caption}" Text="Regular" />
       </StackPanel>
@@ -470,7 +471,7 @@
 
     <Border Grid.Row="12" Grid.Column="2">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="FormatSize" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="FormatSize" />
 
         <TextBlock Style="{StaticResource Caption}" Text="16" />
       </StackPanel>
@@ -478,7 +479,7 @@
 
     <Border Grid.Row="12" Grid.Column="4">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="ArrowUpDown" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="ArrowUpDown" />
 
         <TextBlock Style="{StaticResource Caption}" Text="24" />
       </StackPanel>
@@ -496,7 +497,7 @@
     <!-- MaterialDesignBodyMediumTextBlock -->
     <Border Grid.Row="13" Grid.Column="0">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="LetterABoxOutline" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="AlphaABoxOutline" />
 
         <TextBlock Style="{StaticResource Caption}" Text="Regular" />
       </StackPanel>
@@ -504,7 +505,7 @@
 
     <Border Grid.Row="13" Grid.Column="2">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="FormatSize" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="FormatSize" />
 
         <TextBlock Style="{StaticResource Caption}" Text="14" />
       </StackPanel>
@@ -512,7 +513,7 @@
 
     <Border Grid.Row="13" Grid.Column="4">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="ArrowUpDown" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="ArrowUpDown" />
 
         <TextBlock Style="{StaticResource Caption}" Text="20" />
       </StackPanel>
@@ -530,7 +531,7 @@
     <!-- MaterialDesignBodySmallTextBlock -->
     <Border Grid.Row="14" Grid.Column="0">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="LetterABoxOutline" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="AlphaABoxOutline" />
 
         <TextBlock Style="{StaticResource Caption}" Text="Regular" />
       </StackPanel>
@@ -538,7 +539,7 @@
 
     <Border Grid.Row="14" Grid.Column="2">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="FormatSize" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="FormatSize" />
 
         <TextBlock Style="{StaticResource Caption}" Text="12" />
       </StackPanel>
@@ -546,7 +547,7 @@
 
     <Border Grid.Row="14" Grid.Column="4">
       <StackPanel Orientation="Horizontal">
-        <materialDesign:PackIcon VerticalAlignment="Center" Kind="ArrowUpDown" />
+        <iconPacks:PackIconMaterial VerticalAlignment="Center" Kind="ArrowUpDown" />
 
         <TextBlock Style="{StaticResource Caption}" Text="16" />
       </StackPanel>

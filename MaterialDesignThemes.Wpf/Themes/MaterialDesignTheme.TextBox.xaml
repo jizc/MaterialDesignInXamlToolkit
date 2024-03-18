@@ -2,7 +2,8 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:converters="clr-namespace:MaterialDesignThemes.Wpf.Converters"
                     xmlns:internal="clr-namespace:MaterialDesignThemes.Wpf.Internal"
-                    xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf">
+                    xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf"
+                    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks">
   <ResourceDictionary.MergedDictionaries>
     <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.ValidationErrorTemplate.xaml" />
     <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Menu.xaml" />
@@ -148,7 +149,7 @@
                     <ColumnDefinition />
                     <ColumnDefinition Width="Auto" />
                   </Grid.ColumnDefinitions>
-                  <wpf:PackIcon x:Name="LeadingPackIcon"
+                  <iconPacks:PackIconMaterial x:Name="LeadingPackIcon"
                                 Grid.Column="0"
                                 Width="{TemplateBinding wpf:TextFieldAssist.LeadingIconSize}"
                                 Height="{TemplateBinding wpf:TextFieldAssist.LeadingIconSize}"
@@ -234,7 +235,7 @@
                   </Grid>
 
                   <StackPanel x:Name="TrailingPanel" Orientation="Horizontal" Grid.Column="2" VerticalAlignment="{TemplateBinding VerticalContentAlignment, Converter={StaticResource VerticalAlignmentConverter}}">
-                    <wpf:PackIcon x:Name="TrailingPackIcon"
+                    <iconPacks:PackIconMaterial x:Name="TrailingPackIcon"
                                   Width="{TemplateBinding wpf:TextFieldAssist.TrailingIconSize}"
                                   Height="{TemplateBinding wpf:TextFieldAssist.TrailingIconSize}"
                                   Margin="4,0,0,0"
@@ -255,7 +256,7 @@
                           <Binding ElementName="Hint" Path="IsContentNullOrEmpty" />
                         </MultiBinding>
                       </Button.Visibility>
-                      <wpf:PackIcon Margin="0" Kind="CloseCircle" />
+                      <iconPacks:PackIconMaterial Margin="0" Kind="CloseCircle" />
                     </Button>
                   </StackPanel>
                 </Grid>

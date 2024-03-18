@@ -1,18 +1,19 @@
 using System.Windows.Data;
+using MahApps.Metro.IconPacks;
 
 namespace MaterialDesignThemes.Wpf;
 
 public static class PasswordBoxAssist
 {
     public static readonly DependencyProperty PasswordMaskedIconProperty = DependencyProperty.RegisterAttached(
-        "PasswordMaskedIcon", typeof(PackIconKind), typeof(PasswordBoxAssist), new FrameworkPropertyMetadata(PackIconKind.EyeOff, FrameworkPropertyMetadataOptions.Inherits));
-    public static void SetPasswordMaskedIcon(DependencyObject element, PackIconKind value) => element.SetValue(PasswordMaskedIconProperty, value);
-    public static PackIconKind GetPasswordMaskedIcon(DependencyObject element) => (PackIconKind)element.GetValue(PasswordMaskedIconProperty);
+        "PasswordMaskedIcon", typeof(PackIconMaterialKind), typeof(PasswordBoxAssist), new FrameworkPropertyMetadata(PackIconMaterialKind.EyeOff, FrameworkPropertyMetadataOptions.Inherits));
+    public static void SetPasswordMaskedIcon(DependencyObject element, PackIconMaterialKind value) => element.SetValue(PasswordMaskedIconProperty, value);
+    public static PackIconMaterialKind GetPasswordMaskedIcon(DependencyObject element) => (PackIconMaterialKind)element.GetValue(PasswordMaskedIconProperty);
 
     public static readonly DependencyProperty PasswordRevealedIconProperty = DependencyProperty.RegisterAttached(
-        "PasswordRevealedIcon", typeof(PackIconKind), typeof(PasswordBoxAssist), new FrameworkPropertyMetadata(PackIconKind.Eye, FrameworkPropertyMetadataOptions.Inherits));
-    public static void SetPasswordRevealedIcon(DependencyObject element, PackIconKind value) => element.SetValue(PasswordRevealedIconProperty, value);
-    public static PackIconKind GetPasswordRevealedIcon(DependencyObject element) => (PackIconKind)element.GetValue(PasswordRevealedIconProperty);
+        "PasswordRevealedIcon", typeof(PackIconMaterialKind), typeof(PasswordBoxAssist), new FrameworkPropertyMetadata(PackIconMaterialKind.Eye, FrameworkPropertyMetadataOptions.Inherits));
+    public static void SetPasswordRevealedIcon(DependencyObject element, PackIconMaterialKind value) => element.SetValue(PasswordRevealedIconProperty, value);
+    public static PackIconMaterialKind GetPasswordRevealedIcon(DependencyObject element) => (PackIconMaterialKind)element.GetValue(PasswordRevealedIconProperty);
 
     public static readonly DependencyProperty IsPasswordRevealedProperty = DependencyProperty.RegisterAttached(
         "IsPasswordRevealed", typeof(bool), typeof(PasswordBoxAssist), new FrameworkPropertyMetadata(false, FrameworkPropertyMetadataOptions.Inherits));

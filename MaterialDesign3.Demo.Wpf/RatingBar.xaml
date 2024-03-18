@@ -6,6 +6,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:smtx="clr-namespace:ShowMeTheXAML;assembly=ShowMeTheXAML"
              xmlns:system="clr-namespace:System;assembly=mscorlib"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              d:DesignHeight="300"
              d:DesignWidth="300"
              mc:Ignorable="d">
@@ -33,7 +34,7 @@
           <materialDesign:RatingBar.ValueItemTemplate>
             <DataTemplate DataType="system:Int32">
               <Grid>
-                <materialDesign:PackIcon Width="24"
+                <iconPacks:PackIconMaterial Width="24"
                                          Height="24"
                                          Kind="Heart" />
                 <TextBlock HorizontalAlignment="Center"

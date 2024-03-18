@@ -5,6 +5,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:smtx="clr-namespace:ShowMeTheXAML;assembly=ShowMeTheXAML"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              d:DesignHeight="400"
              d:DesignWidth="1200"
              mc:Ignorable="d">
@@ -39,7 +40,7 @@
                   HorizontalAlignment="Right"
                   VerticalAlignment="Bottom"
                   Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryButton}">
-            <materialDesign:PackIcon Kind="Bike" />
+            <iconPacks:PackIconMaterial Kind="Bike" />
           </Button>
           <StackPanel Grid.Row="1" Margin="8,24,8,0">
             <TextBlock FontWeight="Bold">Cycling</TextBlock>
@@ -55,13 +56,13 @@
                     Padding="2,0,2,0"
                     materialDesign:RippleAssist.IsCentered="True"
                     Style="{StaticResource MaterialDesignToolButton}">
-              <materialDesign:PackIcon Kind="ShareVariant" />
+              <iconPacks:PackIconMaterial Kind="ShareVariant" />
             </Button>
             <Button Width="30"
                     Padding="2,0,2,0"
                     materialDesign:RippleAssist.IsCentered="True"
                     Style="{StaticResource MaterialDesignToolButton}">
-              <materialDesign:PackIcon Kind="Heart" />
+              <iconPacks:PackIconMaterial Kind="Heart" />
             </Button>
             <materialDesign:PopupBox Padding="2,0,2,0" Style="{StaticResource MaterialDesignToolPopupBox}">
               <StackPanel>
@@ -95,7 +96,7 @@
                   HorizontalAlignment="Right"
                   VerticalAlignment="Bottom"
                   Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryButton}">
-            <materialDesign:PackIcon Kind="ShareVariant" />
+            <iconPacks:PackIconMaterial Kind="ShareVariant" />
           </Button>
           <StackPanel Grid.Row="1" Margin="8,24,8,4">
             <TextBlock Margin="0"
@@ -126,7 +127,7 @@
               <ColumnDefinition Width="Auto" />
               <ColumnDefinition />
             </Grid.ColumnDefinitions>
-            <materialDesign:PackIcon Grid.Column="0"
+            <iconPacks:PackIconMaterial Grid.Column="0"
                                      Margin="8,4,4,4"
                                      VerticalAlignment="Center"
                                      Kind="Clock" />
@@ -202,7 +203,7 @@
                       HorizontalAlignment="Right"
                       materialDesign:RippleAssist.IsCentered="True"
                       Style="{StaticResource MaterialDesignToolForegroundButton}">
-                <materialDesign:PackIcon Kind="Phone" />
+                <iconPacks:PackIconMaterial Kind="Phone" />
               </Button>
               <materialDesign:PopupBox Padding="2,0,2,0"
                                        HorizontalAlignment="Right"
@@ -274,7 +275,7 @@
                     HorizontalAlignment="Right"
                     materialDesign:RippleAssist.IsCentered="True"
                     Style="{StaticResource MaterialDesignToolForegroundButton}">
-              <materialDesign:PackIcon Kind="CheckAll" />
+              <iconPacks:PackIconMaterial Kind="CheckAll" />
             </Button>
           </StackPanel>
         </StackPanel>
@@ -318,7 +319,7 @@
                 <RowDefinition Height="*" />
               </Grid.RowDefinitions>
               <materialDesign:ColorZone VerticalAlignment="Stretch" Mode="PrimaryLight">
-                <materialDesign:PackIcon Width="128"
+                <iconPacks:PackIconMaterial Width="128"
                                          Height="128"
                                          HorizontalAlignment="Center"
                                          VerticalAlignment="Center"
@@ -346,7 +347,7 @@
                   <Button HorizontalAlignment="Left"
                           Command="{x:Static materialDesign:Flipper.FlipCommand}"
                           Style="{StaticResource MaterialDesignToolForegroundButton}">
-                    <materialDesign:PackIcon HorizontalAlignment="Right" Kind="ArrowLeft" />
+                    <iconPacks:PackIconMaterial HorizontalAlignment="Right" Kind="ArrowLeft" />
                   </Button>
                   <TextBlock Margin="8,0,0,0"
                              VerticalAlignment="Center"
@@ -416,7 +417,7 @@
                 <Button HorizontalAlignment="Left"
                         Command="{x:Static materialDesign:Flipper.FlipCommand}"
                         Style="{StaticResource MaterialDesignToolForegroundButton}">
-                  <materialDesign:PackIcon HorizontalAlignment="Right" Kind="ArrowLeft" />
+                  <iconPacks:PackIconMaterial HorizontalAlignment="Right" Kind="ArrowLeft" />
                 </Button>
                 <TextBlock Margin="8,0,0,0"
                            VerticalAlignment="Center"

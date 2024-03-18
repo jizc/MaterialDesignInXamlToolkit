@@ -1,5 +1,6 @@
 using System.Windows.Documents;
 using System.Windows.Media;
+using MahApps.Metro.IconPacks;
 
 namespace MaterialDesignThemes.Wpf;
 
@@ -192,13 +193,13 @@ public static class TextFieldAssist
     /// Controls the leading icon
     /// </summary>
     public static readonly DependencyProperty LeadingIconProperty = DependencyProperty.RegisterAttached(
-        "LeadingIcon", typeof(PackIconKind), typeof(TextFieldAssist), new PropertyMetadata());
+        "LeadingIcon", typeof(PackIconMaterialKind), typeof(TextFieldAssist), new PropertyMetadata());
 
-    public static void SetLeadingIcon(DependencyObject element, PackIconKind value)
+    public static void SetLeadingIcon(DependencyObject element, PackIconMaterialKind value)
         => element.SetValue(LeadingIconProperty, value);
 
-    public static PackIconKind GetLeadingIcon(DependencyObject element)
-        => (PackIconKind)element.GetValue(LeadingIconProperty);
+    public static PackIconMaterialKind GetLeadingIcon(DependencyObject element)
+        => (PackIconMaterialKind)element.GetValue(LeadingIconProperty);
 
     /// <summary>
     /// Controls the size of the leading icon
@@ -228,13 +229,13 @@ public static class TextFieldAssist
     /// Controls the trailing icon
     /// </summary>
     public static readonly DependencyProperty TrailingIconProperty = DependencyProperty.RegisterAttached(
-        "TrailingIcon", typeof(PackIconKind), typeof(TextFieldAssist), new PropertyMetadata());
+        "TrailingIcon", typeof(PackIconMaterialKind), typeof(TextFieldAssist), new PropertyMetadata());
 
-    public static void SetTrailingIcon(DependencyObject element, PackIconKind value)
+    public static void SetTrailingIcon(DependencyObject element, PackIconMaterialKind value)
         => element.SetValue(TrailingIconProperty, value);
 
-    public static PackIconKind GetTrailingIcon(DependencyObject element)
-        => (PackIconKind)element.GetValue(TrailingIconProperty);
+    public static PackIconMaterialKind GetTrailingIcon(DependencyObject element)
+        => (PackIconMaterialKind)element.GetValue(TrailingIconProperty);
 
     /// <summary>
     /// Controls the size of the trailing icon

@@ -3,7 +3,8 @@
                     xmlns:converters="clr-namespace:MaterialDesignThemes.Wpf.Converters"
                     xmlns:internal="clr-namespace:MaterialDesignThemes.Wpf.Internal"
                     xmlns:system="clr-namespace:System;assembly=mscorlib"
-                    xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf">
+                    xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf"
+                    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks">
 
   <ResourceDictionary.MergedDictionaries>
     <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Shadows.xaml" />
@@ -493,7 +494,7 @@
               <Binding ElementName="Hint" Path="IsContentNullOrEmpty" />
             </MultiBinding>
           </Button.Visibility>
-          <wpf:PackIcon Margin="0" Kind="CloseCircle" />
+          <iconPacks:PackIconMaterial Margin="0" Kind="CloseCircle" />
         </Button>
       </Grid>
     </AdornerDecorator>

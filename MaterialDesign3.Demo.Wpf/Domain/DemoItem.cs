@@ -1,4 +1,4 @@
-﻿using MaterialDesignThemes.Wpf;
+﻿using MahApps.Metro.IconPacks;
 
 namespace MaterialDesign3Demo.Domain;
 
@@ -15,7 +15,7 @@ public class DemoItem : ViewModelBase
     private int _notificationNumber = 0;
 
     public DemoItem(string name, Type contentType, IEnumerable<DocumentationLink> documentation,
-        PackIconKind selectedIcon, PackIconKind unselectedIcon, object? dataContext = null)
+        PackIconMaterialKind selectedIcon, PackIconMaterialKind unselectedIcon, object? dataContext = null)
     {
         Name = name;
         _contentType = contentType;
@@ -31,8 +31,8 @@ public class DemoItem : ViewModelBase
 
     public object? Content => _content ??= CreateContent();
 
-    public PackIconKind SelectedIcon { get; set; }
-    public PackIconKind UnselectedIcon { get; set; }
+    public PackIconMaterialKind SelectedIcon { get; set; }
+    public PackIconMaterialKind UnselectedIcon { get; set; }
 
     public object? Notifications
     {

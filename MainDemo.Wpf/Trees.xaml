@@ -6,6 +6,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:smtx="clr-namespace:ShowMeTheXAML;assembly=ShowMeTheXAML"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              d:DataContext="{d:DesignInstance domain:TreesViewModel}"
              d:DesignHeight="300"
              d:DesignWidth="300"
@@ -206,11 +207,11 @@
           <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right">
             <Button Command="{Binding AddListTreeItemCommand}"
                     ToolTip="Add an item"
-                    Content="{materialDesign:PackIcon Kind=Add}"/>
+                    Content="{iconPacks:Material Kind=Plus}"/>
 
             <Button Command="{Binding RemoveListTreeItemCommand}"
                     ToolTip="Remove selected item(s)"
-                    Content="{materialDesign:PackIcon Kind=Remove}"/>
+                    Content="{iconPacks:Material Kind=Minus}"/>
 
           </StackPanel>
         </Grid>
@@ -272,7 +273,7 @@
                                             Mode="SecondaryMid">
                     <DockPanel LastChildFill="True">
                       <Button Margin="8,-6,8,-6"
-                              Content="{materialDesign:PackIcon Kind=Search}"
+                              Content="{iconPacks:Material Kind=Magnify}"
                               DockPanel.Dock="Right"
                               Style="{StaticResource MaterialDesignToolForegroundButton}" />
 
@@ -314,7 +315,7 @@
           <TreeView.Resources>
             <DataTemplate DataType="{x:Type domain:Planet}">
               <StackPanel Orientation="Horizontal">
-                <materialDesign:PackIcon Kind="GoogleEarth" />
+                <iconPacks:PackIconMaterial Kind="GoogleEarth" />
                 <TextBlock Margin="12,0,0,0" Text="{Binding Name, Mode=OneTime}" />
               </StackPanel>
             </DataTemplate>
@@ -329,7 +330,7 @@
                                             Mode="Standard">
                     <DockPanel LastChildFill="True">
                       <Button Margin="8,-6,8,-6"
-                              Content="{materialDesign:PackIcon Kind=Search}"
+                              Content="{iconPacks:Material Kind=Magnify}"
                               DockPanel.Dock="Right"
                               Style="{StaticResource MaterialDesignToolForegroundButton}" />
 

@@ -1,7 +1,8 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:converters="clr-namespace:MaterialDesignThemes.Wpf.Converters"
-                    xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf">
+                    xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf"
+                    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks">
 
   <converters:BorderClipConverter x:Key="BorderClipConverter" />
   <converters:BrushRoundConverter x:Key="BrushRoundConverter" />
@@ -100,7 +101,7 @@
                         HorizontalAlignment="Left"
                         VerticalAlignment="Center"
                         DockPanel.Dock="Left">
-                    <wpf:PackIcon x:Name="Icon"
+                    <iconPacks:PackIconMaterial x:Name="Icon"
                                   Width="{Binding Path=(wpf:NavigationDrawerAssist.IconSize), RelativeSource={RelativeSource TemplatedParent}}"
                                   Height="{Binding Path=(wpf:NavigationDrawerAssist.IconSize), RelativeSource={RelativeSource TemplatedParent}}"
                                   HorizontalAlignment="Center"

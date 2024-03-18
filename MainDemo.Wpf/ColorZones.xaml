@@ -5,6 +5,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:smtx="clr-namespace:ShowMeTheXAML;assembly=ShowMeTheXAML"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              d:DesignHeight="800"
              d:DesignWidth="600"
              mc:Ignorable="d">
@@ -106,7 +107,7 @@
                   <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
                 <Button Style="{StaticResource MaterialDesignToolButton}">
-                  <materialDesign:PackIcon Kind="Search" Opacity=".56" />
+                  <iconPacks:PackIconMaterial Kind="Magnify" Opacity=".56" />
                 </Button>
 
                 <TextBox Grid.Column="1"
@@ -118,7 +119,7 @@
                          BorderThickness="0" />
 
                 <Button Grid.Column="2" Style="{StaticResource MaterialDesignToolButton}">
-                  <materialDesign:PackIcon Margin="8,0,0,0"
+                  <iconPacks:PackIconMaterial Margin="8,0,0,0"
                                            Kind="Microphone"
                                            Opacity=".56" />
                 </Button>
@@ -128,7 +129,7 @@
             <Button Margin="8,0,0,0"
                     Panel.ZIndex="0"
                     Style="{StaticResource MaterialDesignToolForegroundButton}">
-              <materialDesign:PackIcon Kind="Send" />
+              <iconPacks:PackIconMaterial Kind="Send" />
             </Button>
           </StackPanel>
         </DockPanel>

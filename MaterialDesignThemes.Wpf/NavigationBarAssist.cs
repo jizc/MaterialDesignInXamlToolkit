@@ -1,4 +1,6 @@
-﻿namespace MaterialDesignThemes.Wpf;
+﻿using MahApps.Metro.IconPacks;
+
+namespace MaterialDesignThemes.Wpf;
 
 public static class NavigationBarAssist
 {
@@ -57,23 +59,23 @@ public static class NavigationBarAssist
     #endregion
 
     #region UnselectedIcon
-    public static PackIconKind GetUnselectedIcon(DependencyObject element)
-        => (PackIconKind)element.GetValue(UnselectedIconProperty);
-    public static void SetUnselectedIcon(DependencyObject element, PackIconKind value)
+    public static PackIconMaterialKind GetUnselectedIcon(DependencyObject element)
+        => (PackIconMaterialKind)element.GetValue(UnselectedIconProperty);
+    public static void SetUnselectedIcon(DependencyObject element, PackIconMaterialKind value)
         => element.SetValue(UnselectedIconProperty, value);
 
     public static readonly DependencyProperty UnselectedIconProperty =
-        DependencyProperty.RegisterAttached("UnselectedIcon", typeof(PackIconKind), typeof(NavigationBarAssist), new PropertyMetadata(PackIconKind.None));
+        DependencyProperty.RegisterAttached("UnselectedIcon", typeof(PackIconMaterialKind), typeof(NavigationBarAssist), new PropertyMetadata(PackIconMaterialKind.None));
     #endregion
 
     #region SelectedIcon
-    public static PackIconKind GetSelectedIcon(DependencyObject element)
-        => (PackIconKind)element.GetValue(SelectedIconProperty);
-    public static void SetSelectedIcon(DependencyObject element, PackIconKind value)
+    public static PackIconMaterialKind GetSelectedIcon(DependencyObject element)
+        => (PackIconMaterialKind)element.GetValue(SelectedIconProperty);
+    public static void SetSelectedIcon(DependencyObject element, PackIconMaterialKind value)
         => element.SetValue(SelectedIconProperty, value);
 
     public static readonly DependencyProperty SelectedIconProperty =
-        DependencyProperty.RegisterAttached("SelectedIcon", typeof(PackIconKind), typeof(NavigationBarAssist), new PropertyMetadata(PackIconKind.None));
+        DependencyProperty.RegisterAttached("SelectedIcon", typeof(PackIconMaterialKind), typeof(NavigationBarAssist), new PropertyMetadata(PackIconMaterialKind.None));
     #endregion
 
     #region IconSize

@@ -1,7 +1,8 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:converters="clr-namespace:MaterialDesignThemes.Wpf.Converters"
-                    xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf">
+                    xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf"
+                    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks">
 
   <Duration x:Key="ExpandDuration">0:0:0.250</Duration>
   <Duration x:Key="CollapseDuration">0:0:0.200</Duration>
@@ -41,17 +42,17 @@
                     </VisualState>
                   </VisualStateGroup>
                 </VisualStateManager.VisualStateGroups>
-                <wpf:PackIcon x:Name="ExpandPath"
+                <iconPacks:PackIconMaterial x:Name="ExpandPath"
                               Width="24"
                               Height="24"
                               Foreground="{TemplateBinding Foreground}"
                               Kind="ChevronDown"
                               Opacity="0.38"
                               RenderTransformOrigin="0.5 0.5">
-                  <wpf:PackIcon.RenderTransform>
+                  <iconPacks:PackIconMaterial.RenderTransform>
                     <RotateTransform x:Name="ExpandPathRotateTransform" />
-                  </wpf:PackIcon.RenderTransform>
-                </wpf:PackIcon>
+                  </iconPacks:PackIconMaterial.RenderTransform>
+                </iconPacks:PackIconMaterial>
               </Border>
             </ControlTemplate>
           </Setter.Value>

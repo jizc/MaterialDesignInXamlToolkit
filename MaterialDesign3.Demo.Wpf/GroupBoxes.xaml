@@ -5,6 +5,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:smtx="clr-namespace:ShowMeTheXAML;assembly=ShowMeTheXAML"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              d:DesignHeight="300"
              d:DesignWidth="300"
              mc:Ignorable="d">
@@ -96,7 +97,7 @@
         <GroupBox.HeaderTemplate>
           <DataTemplate>
             <StackPanel Orientation="Horizontal">
-              <materialDesign:PackIcon Width="32"
+              <iconPacks:PackIconMaterial Width="32"
                                        Height="32"
                                        VerticalAlignment="Center"
                                        Kind="ImageArea" />
@@ -125,7 +126,7 @@
         <GroupBox.HeaderTemplate>
           <DataTemplate>
             <StackPanel Orientation="Horizontal">
-              <materialDesign:PackIcon Width="32"
+              <iconPacks:PackIconMaterial Width="32"
                                        Height="32"
                                        VerticalAlignment="Center"
                                        Kind="ImageArea" />
@@ -156,7 +157,7 @@
         <GroupBox.HeaderTemplate>
           <DataTemplate>
             <StackPanel Orientation="Horizontal">
-              <materialDesign:PackIcon Width="32"
+              <iconPacks:PackIconMaterial Width="32"
                                        Height="32"
                                        VerticalAlignment="Center"
                                        Kind="ImageArea" />

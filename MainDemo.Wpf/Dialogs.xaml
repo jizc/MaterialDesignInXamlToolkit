@@ -7,6 +7,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:smtx="clr-namespace:ShowMeTheXAML;assembly=ShowMeTheXAML"
              xmlns:system="clr-namespace:System;assembly=mscorlib"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              d:DataContext="{d:DesignInstance domain:DialogsViewModel}"
              d:DesignHeight="300"
              d:DesignWidth="300"
@@ -123,8 +124,7 @@
                       HorizontalAlignment="Right"
                       VerticalAlignment="Bottom"
                       Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}"
-                      Content="{materialDesign:PackIcon Kind=Plus,
-                                                        Size=22}"
+                      Content="{iconPacks:Material Kind=Plus, Width=22, Height=22}"
                       Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryButton}" />
             </Grid>
           </Border>
@@ -230,7 +230,7 @@
                                    DialogContent="{Binding Sample4Content}"
                                    DialogTheme="Inherit"
                                    IsOpen="{Binding IsSample4DialogOpen}"
-                                   OverlayBackground="{DynamicResource PrimaryHueDarkBrush}"
+                                   OverlayBackground="{DynamicResource MaterialDesign.Brush.Primary.Dark}"
                                    Placement="Mouse">
 
           <Border MinWidth="256"
@@ -323,8 +323,7 @@
                       HorizontalAlignment="Right"
                       VerticalAlignment="Bottom"
                       Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}"
-                      Content="{materialDesign:PackIcon Kind=Plus,
-                                                        Size=22}"
+                      Content="{iconPacks:Material Kind=Plus, Width=22, Height=22}"
                       Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryButton}" />
             </Grid>
           </Border>
