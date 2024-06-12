@@ -2,18 +2,20 @@
 
 public class RatingBarButton : ButtonBase
 {
-    static RatingBarButton()
-    {
-        DefaultStyleKeyProperty.OverrideMetadata(typeof(RatingBarButton), new FrameworkPropertyMetadata(typeof(RatingBarButton)));
-    }
+    public static readonly DependencyProperty ValueProperty;
 
     private static readonly DependencyPropertyKey ValuePropertyKey =
         DependencyProperty.RegisterReadOnly(
-            "Value", typeof(int), typeof(RatingBarButton),
+            nameof(Value),
+            typeof(int),
+            typeof(RatingBarButton),
             new PropertyMetadata(default(int)));
 
-    public static readonly DependencyProperty ValueProperty =
-        ValuePropertyKey.DependencyProperty;
+    static RatingBarButton()
+    {
+        ValueProperty = ValuePropertyKey.DependencyProperty;
+        DefaultStyleKeyProperty.OverrideMetadata(typeof(RatingBarButton), new FrameworkPropertyMetadata(typeof(RatingBarButton)));
+    }
 
     public int Value
     {
