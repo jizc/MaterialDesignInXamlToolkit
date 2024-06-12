@@ -162,7 +162,6 @@
                      HorizontalAlignment="Left">
               <materialDesign:RatingBar Margin="0"
                                         Foreground="Gold"
-                                        Orientation="Horizontal"
                                         Value="3" />
             </Viewbox>
             <TextBlock VerticalAlignment="Center"

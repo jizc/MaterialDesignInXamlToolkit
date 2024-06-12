@@ -29,7 +29,6 @@
       <smtx:XamlDisplay Margin="24,0,0,5" UniqueKey="buttons_59">
         <materialDesign:RatingBar x:Name="CustomRatingBar"
                                   Max="3"
-                                  Orientation="Vertical"
                                   Value="2">
           <materialDesign:RatingBar.ValueItemTemplate>
             <DataTemplate DataType="system:Int32">

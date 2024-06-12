@@ -8,8 +8,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaterialDesignThemes.Wpf", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demos", "Demos", "{D34BE232-DE51-43C1-ABDC-B69003BB50FF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaterialDesignThemes.Wpf.Tests", "MaterialDesignThemes.Wpf.Tests\MaterialDesignThemes.Wpf.Tests.csproj", "{A361C80E-F6CD-4C57-A96C-002DB159C1F4}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{55087897-5F09-45CA-8E12-12B36B45F262}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
@@ -69,22 +67,6 @@ Global
 		{F079FB0A-A8ED-4216-B6A5-345756751A04}.Release|x64.Build.0 = Release|Any CPU
 		{F079FB0A-A8ED-4216-B6A5-345756751A04}.Release|x86.ActiveCfg = Release|Any CPU
 		{F079FB0A-A8ED-4216-B6A5-345756751A04}.Release|x86.Build.0 = Release|Any CPU
-		{A361C80E-F6CD-4C57-A96C-002DB159C1F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A361C80E-F6CD-4C57-A96C-002DB159C1F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A361C80E-F6CD-4C57-A96C-002DB159C1F4}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{A361C80E-F6CD-4C57-A96C-002DB159C1F4}.Debug|ARM.Build.0 = Debug|Any CPU
-		{A361C80E-F6CD-4C57-A96C-002DB159C1F4}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{A361C80E-F6CD-4C57-A96C-002DB159C1F4}.Debug|x64.Build.0 = Debug|Any CPU
-		{A361C80E-F6CD-4C57-A96C-002DB159C1F4}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{A361C80E-F6CD-4C57-A96C-002DB159C1F4}.Debug|x86.Build.0 = Debug|Any CPU
-		{A361C80E-F6CD-4C57-A96C-002DB159C1F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A361C80E-F6CD-4C57-A96C-002DB159C1F4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A361C80E-F6CD-4C57-A96C-002DB159C1F4}.Release|ARM.ActiveCfg = Release|Any CPU
-		{A361C80E-F6CD-4C57-A96C-002DB159C1F4}.Release|ARM.Build.0 = Release|Any CPU
-		{A361C80E-F6CD-4C57-A96C-002DB159C1F4}.Release|x64.ActiveCfg = Release|Any CPU
-		{A361C80E-F6CD-4C57-A96C-002DB159C1F4}.Release|x64.Build.0 = Release|Any CPU
-		{A361C80E-F6CD-4C57-A96C-002DB159C1F4}.Release|x86.ActiveCfg = Release|Any CPU
-		{A361C80E-F6CD-4C57-A96C-002DB159C1F4}.Release|x86.Build.0 = Release|Any CPU
 		{98627CBE-F009-482E-97E9-C69C7135E91F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{98627CBE-F009-482E-97E9-C69C7135E91F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98627CBE-F009-482E-97E9-C69C7135E91F}.Debug|ARM.ActiveCfg = Debug|Any CPU
