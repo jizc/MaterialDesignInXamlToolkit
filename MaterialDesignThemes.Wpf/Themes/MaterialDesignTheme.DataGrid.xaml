@@ -120,13 +120,11 @@
                          PopupAnimation="Fade"
                          VerticalOffset="-6">
               <Grid>
-                <AdornerDecorator CacheMode="{Binding RelativeSource={RelativeSource Self}, Path=(wpf:ShadowAssist.CacheMode)}">
-                  <Border Margin="5,5,5,5"
-                          Background="{DynamicResource MaterialDesign.Brush.Background}"
-                          BorderThickness="1"
-                          CornerRadius="2"
-                          Effect="{StaticResource MaterialDesignShadowDepth2}" />
-                </AdornerDecorator>
+                <Border Margin="5,5,5,5"
+                        Background="{DynamicResource MaterialDesign.Brush.Background}"
+                        BorderThickness="1"
+                        CornerRadius="2"
+                        Effect="{StaticResource MaterialDesignShadowDepth2}" />
                 <Border Margin="5,5,5,5"
                         Padding="16"
                         Background="Transparent"

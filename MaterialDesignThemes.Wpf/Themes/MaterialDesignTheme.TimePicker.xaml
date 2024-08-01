@@ -502,13 +502,11 @@
             <Setter Property="Template">
               <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ContentControl}">
-                  <AdornerDecorator CacheMode="{Binding RelativeSource={RelativeSource Self}, Path=(wpf:ShadowAssist.CacheMode)}">
-                    <Border Padding="16,8,16,24" Effect="{DynamicResource MaterialDesignShadowDepth4}">
-                      <ContentPresenter Content="{TemplateBinding ContentControl.Content}"
-                                        ContentStringFormat="{TemplateBinding ContentControl.ContentStringFormat}"
-                                        ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}" />
-                    </Border>
-                  </AdornerDecorator>
+                  <Border Padding="16,8,16,24" Effect="{DynamicResource MaterialDesignShadowDepth4}">
+                    <ContentPresenter Content="{TemplateBinding ContentControl.Content}"
+                                      ContentStringFormat="{TemplateBinding ContentControl.ContentStringFormat}"
+                                      ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}" />
+                  </Border>
                 </ControlTemplate>
               </Setter.Value>
             </Setter>

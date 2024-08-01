@@ -282,7 +282,7 @@
 
           <CheckBox Content="Check" />
 
-          <Button Content="{iconPacks:Material Kind=Hotel}"
+          <Button Content="{iconPacks:Material Kind=Bed}"
                   ToolBar.OverflowMode="Always"
                   ToolTip="Take a nap" />
 

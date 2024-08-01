@@ -531,11 +531,9 @@
                 <Binding Path="(local:ElevationAssist.Elevation)" RelativeSource="{RelativeSource TemplatedParent}" />
               </MultiBinding>
             </Grid.OpacityMask>
-            <AdornerDecorator CacheMode="{Binding RelativeSource={RelativeSource Self}, Path=(local:ShadowAssist.CacheMode)}">
-              <Border Background="{TemplateBinding Background}"
-                      CornerRadius="{TemplateBinding CornerRadius}"
-                      Effect="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(local:ElevationAssist.Elevation), Converter={x:Static converters:ShadowConverter.Instance}}" />
-            </AdornerDecorator>
+            <Border Background="{TemplateBinding Background}"
+                    CornerRadius="{TemplateBinding CornerRadius}"
+                    Effect="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(local:ElevationAssist.Elevation), Converter={x:Static converters:ShadowConverter.Instance}}" />
             <Border Background="{TemplateBinding Background}"
                     BorderBrush="{TemplateBinding BorderBrush}"
                     BorderThickness="{TemplateBinding BorderThickness}"
@@ -992,23 +990,21 @@
                   </Style>
                 </Grid.Style>
 
-                <AdornerDecorator CacheMode="{Binding RelativeSource={RelativeSource Self}, Path=(local:ShadowAssist.CacheMode)}">
-                  <Border x:Name="LeftDrawerShadow"
-                          Background="{TemplateBinding LeftDrawerBackground}"
-                          CornerRadius="{TemplateBinding LeftDrawerCornerRadius}"
-                          Opacity="0">
-                    <Border.Style>
-                      <Style TargetType="Border">
-                        <Setter Property="Effect" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(local:ElevationAssist.Elevation), Converter={x:Static converters:ShadowConverter.Instance}}" />
-                        <Style.Triggers>
-                          <DataTrigger Binding="{Binding OpenMode, RelativeSource={RelativeSource TemplatedParent}}" Value="Standard">
-                            <Setter Property="Effect" Value="{x:Null}" />
-                          </DataTrigger>
-                        </Style.Triggers>
-                      </Style>
-                    </Border.Style>
-                  </Border>
-                </AdornerDecorator>
+                <Border x:Name="LeftDrawerShadow"
+                        Background="{TemplateBinding LeftDrawerBackground}"
+                        CornerRadius="{TemplateBinding LeftDrawerCornerRadius}"
+                        Opacity="0">
+                  <Border.Style>
+                    <Style TargetType="Border">
+                      <Setter Property="Effect" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(local:ElevationAssist.Elevation), Converter={x:Static converters:ShadowConverter.Instance}}" />
+                      <Style.Triggers>
+                        <DataTrigger Binding="{Binding OpenMode, RelativeSource={RelativeSource TemplatedParent}}" Value="Standard">
+                          <Setter Property="Effect" Value="{x:Null}" />
+                        </DataTrigger>
+                      </Style.Triggers>
+                    </Style>
+                  </Border.Style>
+                </Border>
                 <ContentPresenter Content="{TemplateBinding LeftDrawerContent}"
                                   ContentStringFormat="{TemplateBinding LeftDrawerContentStringFormat}"
                                   ContentTemplate="{TemplateBinding LeftDrawerContentTemplate}"
@@ -1034,23 +1030,21 @@
                     </Style.Triggers>
                   </Style>
                 </Grid.Style>
-                <AdornerDecorator CacheMode="{Binding RelativeSource={RelativeSource Self}, Path=(local:ShadowAssist.CacheMode)}">
-                  <Border x:Name="RightDrawerShadow"
-                          Background="{TemplateBinding RightDrawerBackground}"
-                          CornerRadius="{TemplateBinding RightDrawerCornerRadius}"
-                          Opacity="0">
-                    <Border.Style>
-                      <Style TargetType="Border">
-                        <Setter Property="Effect" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(local:ElevationAssist.Elevation), Converter={x:Static converters:ShadowConverter.Instance}}" />
-                        <Style.Triggers>
-                          <DataTrigger Binding="{Binding OpenMode, RelativeSource={RelativeSource TemplatedParent}}" Value="Standard">
-                            <Setter Property="Effect" Value="{x:Null}" />
-                          </DataTrigger>
-                        </Style.Triggers>
-                      </Style>
-                    </Border.Style>
-                  </Border>
-                </AdornerDecorator>
+                <Border x:Name="RightDrawerShadow"
+                        Background="{TemplateBinding RightDrawerBackground}"
+                        CornerRadius="{TemplateBinding RightDrawerCornerRadius}"
+                        Opacity="0">
+                  <Border.Style>
+                    <Style TargetType="Border">
+                      <Setter Property="Effect" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(local:ElevationAssist.Elevation), Converter={x:Static converters:ShadowConverter.Instance}}" />
+                      <Style.Triggers>
+                        <DataTrigger Binding="{Binding OpenMode, RelativeSource={RelativeSource TemplatedParent}}" Value="Standard">
+                          <Setter Property="Effect" Value="{x:Null}" />
+                        </DataTrigger>
+                      </Style.Triggers>
+                    </Style>
+                  </Border.Style>
+                </Border>
                 <ContentPresenter Content="{TemplateBinding RightDrawerContent}"
                                   ContentStringFormat="{TemplateBinding RightDrawerContentStringFormat}"
                                   ContentTemplate="{TemplateBinding RightDrawerContentTemplate}"
@@ -1076,23 +1070,21 @@
                     </Style.Triggers>
                   </Style>
                 </Grid.Style>
-                <AdornerDecorator CacheMode="{Binding RelativeSource={RelativeSource Self}, Path=(local:ShadowAssist.CacheMode)}">
-                  <Border x:Name="TopDrawerShadow"
-                          Background="{TemplateBinding TopDrawerBackground}"
-                          CornerRadius="{TemplateBinding TopDrawerCornerRadius}"
-                          Opacity="0">
-                    <Border.Style>
-                      <Style TargetType="Border">
-                        <Setter Property="Effect" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(local:ElevationAssist.Elevation), Converter={x:Static converters:ShadowConverter.Instance}}" />
-                        <Style.Triggers>
-                          <DataTrigger Binding="{Binding OpenMode, RelativeSource={RelativeSource TemplatedParent}}" Value="Standard">
-                            <Setter Property="Effect" Value="{x:Null}" />
-                          </DataTrigger>
-                        </Style.Triggers>
-                      </Style>
-                    </Border.Style>
-                  </Border>
-                </AdornerDecorator>
+                <Border x:Name="TopDrawerShadow"
+                        Background="{TemplateBinding TopDrawerBackground}"
+                        CornerRadius="{TemplateBinding TopDrawerCornerRadius}"
+                        Opacity="0">
+                  <Border.Style>
+                    <Style TargetType="Border">
+                      <Setter Property="Effect" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(local:ElevationAssist.Elevation), Converter={x:Static converters:ShadowConverter.Instance}}" />
+                      <Style.Triggers>
+                        <DataTrigger Binding="{Binding OpenMode, RelativeSource={RelativeSource TemplatedParent}}" Value="Standard">
+                          <Setter Property="Effect" Value="{x:Null}" />
+                        </DataTrigger>
+                      </Style.Triggers>
+                    </Style>
+                  </Border.Style>
+                </Border>
                 <ContentPresenter Content="{TemplateBinding TopDrawerContent}"
                                   ContentStringFormat="{TemplateBinding TopDrawerContentStringFormat}"
                                   ContentTemplate="{TemplateBinding TopDrawerContentTemplate}"
@@ -1118,23 +1110,21 @@
                     </Style.Triggers>
                   </Style>
                 </Grid.Style>
-                <AdornerDecorator CacheMode="{Binding RelativeSource={RelativeSource Self}, Path=(local:ShadowAssist.CacheMode)}">
-                  <Border x:Name="BottomDrawerShadow"
-                          Background="{TemplateBinding BottomDrawerBackground}"
-                          CornerRadius="{TemplateBinding BottomDrawerCornerRadius}"
-                          Opacity="0">
-                    <Border.Style>
-                      <Style TargetType="Border">
-                        <Setter Property="Effect" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(local:ElevationAssist.Elevation), Converter={x:Static converters:ShadowConverter.Instance}}" />
-                        <Style.Triggers>
-                          <DataTrigger Binding="{Binding OpenMode, RelativeSource={RelativeSource TemplatedParent}}" Value="Standard">
-                            <Setter Property="Effect" Value="{x:Null}" />
-                          </DataTrigger>
-                        </Style.Triggers>
-                      </Style>
-                    </Border.Style>
-                  </Border>
-                </AdornerDecorator>
+                <Border x:Name="BottomDrawerShadow"
+                        Background="{TemplateBinding BottomDrawerBackground}"
+                        CornerRadius="{TemplateBinding BottomDrawerCornerRadius}"
+                        Opacity="0">
+                  <Border.Style>
+                    <Style TargetType="Border">
+                      <Setter Property="Effect" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(local:ElevationAssist.Elevation), Converter={x:Static converters:ShadowConverter.Instance}}" />
+                      <Style.Triggers>
+                        <DataTrigger Binding="{Binding OpenMode, RelativeSource={RelativeSource TemplatedParent}}" Value="Standard">
+                          <Setter Property="Effect" Value="{x:Null}" />
+                        </DataTrigger>
+                      </Style.Triggers>
+                    </Style>
+                  </Border.Style>
+                </Border>
                 <ContentPresenter Content="{TemplateBinding BottomDrawerContent}"
                                   ContentStringFormat="{TemplateBinding BottomDrawerContentStringFormat}"
                                   ContentTemplate="{TemplateBinding BottomDrawerContentTemplate}"

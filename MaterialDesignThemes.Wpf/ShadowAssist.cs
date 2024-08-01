@@ -1,4 +1,3 @@
-using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Media.Effects;
 
@@ -74,21 +73,6 @@ public static class ShadowAssist
     public static bool GetDarken(DependencyObject element)
     {
         return (bool)element.GetValue(DarkenProperty);
-    }
-    #endregion
-
-    #region AttachedProperty : CacheModeProperty
-    public static readonly DependencyProperty CacheModeProperty = DependencyProperty.RegisterAttached(
-        "CacheMode", typeof(CacheMode), typeof(ShadowAssist), new FrameworkPropertyMetadata(new BitmapCache { EnableClearType = true, SnapsToDevicePixels = true }, FrameworkPropertyMetadataOptions.Inherits));
-
-    public static void SetCacheMode(DependencyObject element, CacheMode value)
-    {
-        element.SetValue(CacheModeProperty, value);
-    }
-
-    public static CacheMode GetCacheMode(DependencyObject element)
-    {
-        return (CacheMode)element.GetValue(CacheModeProperty);
     }
     #endregion
 

@@ -159,13 +159,11 @@
              PlacementTarget="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}}"
              PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}">
         <Grid MaxHeight="{TemplateBinding MaxDropDownHeight}" UseLayoutRounding="True">
-          <AdornerDecorator CacheMode="{Binding RelativeSource={RelativeSource Self}, Path=(wpf:ShadowAssist.CacheMode)}">
-            <Border x:Name="shadow"
-                    Background="{DynamicResource MaterialDesign.Brush.Background}"
-                    BorderThickness="1"
-                    CornerRadius="2"
-                    Effect="{DynamicResource MaterialDesignShadowDepth2}" />
-          </AdornerDecorator>
+          <Border x:Name="shadow"
+                  Background="{DynamicResource MaterialDesign.Brush.Background}"
+                  BorderThickness="1"
+                  CornerRadius="2"
+                  Effect="{DynamicResource MaterialDesignShadowDepth2}" />
           <Border x:Name="dropDownBorder"
                   MinWidth="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=DataGridCell}}"
                   Margin="{Binding ElementName=shadow, Path=Margin, Mode=OneWay}"
@@ -285,13 +283,11 @@
              PlacementTarget="{Binding RelativeSource={RelativeSource AncestorType=DataGridCell}}"
              PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}">
         <Grid MaxHeight="{TemplateBinding MaxDropDownHeight}" UseLayoutRounding="True">
-          <AdornerDecorator CacheMode="{Binding RelativeSource={RelativeSource Self}, Path=(wpf:ShadowAssist.CacheMode)}">
-            <Border x:Name="shadow"
-                    Background="{DynamicResource MaterialDesign.Brush.Background}"
-                    BorderThickness="1"
-                    CornerRadius="2"
-                    Effect="{DynamicResource MaterialDesignShadowDepth2}" />
-          </AdornerDecorator>
+          <Border x:Name="shadow"
+                  Background="{DynamicResource MaterialDesign.Brush.Background}"
+                  BorderThickness="1"
+                  CornerRadius="2"
+                  Effect="{DynamicResource MaterialDesignShadowDepth2}" />
           <Border x:Name="dropDownBorder"
                   MinWidth="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=DataGridCell}}"
                   Margin="{Binding ElementName=shadow, Path=Margin, Mode=OneWay}"
